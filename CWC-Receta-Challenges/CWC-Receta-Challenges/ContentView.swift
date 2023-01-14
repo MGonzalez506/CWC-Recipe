@@ -56,7 +56,7 @@ struct ContentView: View {
         if deck.contains(newCard){
             // The combination is not in the array
             // Therefore append it
-            print("Ya existía: \(newCard.cardNumber) suit: \(newCard.cardSuit)")
+            message = "The card \(newCard.cardNumber) of \(newCard.cardSuit) is already in the deck."
         } else {
             // The combination is alreay in the array
             // Therefore do not append
