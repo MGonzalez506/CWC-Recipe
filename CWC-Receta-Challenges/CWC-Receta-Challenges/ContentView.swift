@@ -53,15 +53,32 @@ struct ContentView: View {
         // Assign to newCard a random suit from the 4 available
         newCard.cardSuit = suits[Int.random(in: 0...3)]
         // Check if combination is already in array
+        let specialCard = checkSpecialCard(cardNumber: newCard.cardNumber)
         if deck.contains(newCard){
             // The combination is not in the array
             // Therefore append it
-            message = "The card \(newCard.cardNumber) of \(newCard.cardSuit) is already in the deck."
+            message = "The card \(specialCard) of \(newCard.cardSuit) is already in the deck."
         } else {
             // The combination is alreay in the array
             // Therefore do not append
-            message = "Generated a \(newCard.cardNumber) of \(newCard.cardSuit)"
+            message = "Generated a \(specialCard) of \(newCard.cardSuit)"
             deck.append(newCard)
+        }
+    }
+    
+    func checkSpecialCard(cardNumber:Int) -> String {
+        // Check if number corresponds to a special card
+        switch cardNumber {
+        case 1:
+            return "Ace"
+        case 11:
+            return "Jack"
+        case 12:
+            return "Queen"
+        case 13:
+            return "King"
+        default:
+            return String(cardNumber)
         }
     }
 }
