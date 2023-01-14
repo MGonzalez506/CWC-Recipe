@@ -14,6 +14,9 @@ struct card {
 
 struct ContentView: View {
     
+    // Create an instance of your playing card structure
+    var deck:[card] = [card]()
+    
     var body: some View {
         VStack {
             Spacer()
