@@ -60,7 +60,7 @@ struct ContentView: View {
         } else {
             // The combination is alreay in the array
             // Therefore do not append
-            print("New combination: \(newCard.cardNumber) suit: \(newCard.cardSuit)")
+            message = "Generated a \(newCard.cardNumber) of \(newCard.cardSuit)"
             deck.append(newCard)
         }
     }
