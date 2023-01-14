@@ -16,6 +16,9 @@ struct ContentView: View {
     
     // Create an instance of your playing card structure
     @State var deck:[card] = [card]()
+    
+    // Message to display in the label
+    @State var message = "Resultado"
     // Create an array with the 4 main suits
     var suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
     // Create an array with the 4 special Cards in a deck
@@ -24,7 +27,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
-            Text("Resultado")
+            Text(message)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.pink)
