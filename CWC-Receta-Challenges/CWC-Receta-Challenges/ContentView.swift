@@ -66,6 +66,11 @@ struct ContentView: View {
         }
     }
     
+    func drawCard(){
+        // Get a random card from deck
+        
+    }
+    
     func checkSpecialCard(cardNumber:Int) -> String {
         // Check if number corresponds to a special card
         switch cardNumber {
