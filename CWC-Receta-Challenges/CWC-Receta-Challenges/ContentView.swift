@@ -32,23 +32,7 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 Button("Nueva Carta") {
-                    // Create an instance of card
-                    var newCard = card()
-                    // Assign to newCard a random number from 1 to 13
-                    newCard.cardNumber = Int.random(in: 1...13)
-                    // Assign to newCard a random suit from the 4 available
-                    newCard.cardSuit = suits[Int.random(in: 0...3)]
-                    // Check if combination is already in array
-                    if deck.contains(newCard){
-                        // The combination is not in the array
-                        // Therefore append it
-                        print("Ya existía: \(newCard.cardNumber) suit: \(newCard.cardSuit)")
-                    } else {
-                        // The combination is alreay in the array
-                        // Therefore do not append
-                        print("New combination: \(newCard.cardNumber) suit: \(newCard.cardSuit)")
-                        deck.append(newCard)
-                    }
+                    addCard()
                 }
                 Spacer()
                 Spacer()
@@ -56,6 +40,26 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+    }
+    
+    func addCard() {
+        // Create an instance of card
+        var newCard = card()
+        // Assign to newCard a random number from 1 to 13
+        newCard.cardNumber = Int.random(in: 1...13)
+        // Assign to newCard a random suit from the 4 available
+        newCard.cardSuit = suits[Int.random(in: 0...3)]
+        // Check if combination is already in array
+        if deck.contains(newCard){
+            // The combination is not in the array
+            // Therefore append it
+            print("Ya existía: \(newCard.cardNumber) suit: \(newCard.cardSuit)")
+        } else {
+            // The combination is alreay in the array
+            // Therefore do not append
+            print("New combination: \(newCard.cardNumber) suit: \(newCard.cardSuit)")
+            deck.append(newCard)
+        }
     }
 }
 
