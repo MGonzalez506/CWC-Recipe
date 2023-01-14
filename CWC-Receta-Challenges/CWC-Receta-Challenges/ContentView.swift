@@ -68,7 +68,10 @@ struct ContentView: View {
     
     func drawCard(){
         // Get a random card from deck
-        
+        let drewCard = deck.randomElement()!
+        let cardSui = drewCard.cardSuit
+        let cardNum = checkSpecialCard(cardNumber: drewCard.cardNumber)
+        message = "Drew a \(cardNum) of \(cardSui)"
     }
     
     func checkSpecialCard(cardNumber:Int) -> String {
