@@ -9,5 +9,5 @@ import Foundation
 
 
 struct SomeModel {
-    var name: String?
+    var name: String = "Miguel"
 }
