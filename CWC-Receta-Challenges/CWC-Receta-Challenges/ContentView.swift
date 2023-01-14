@@ -24,6 +24,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
+            Text("Resultado")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.pink)
             Spacer()
             Spacer()
         }
