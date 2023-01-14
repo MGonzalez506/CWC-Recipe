@@ -38,6 +38,9 @@ struct ContentView: View {
                     addCard()
                 }
                 Spacer()
+                Button("Drew Card") {
+                    drawCard()
+                }
                 Spacer()
             }
             Spacer()
@@ -68,10 +71,14 @@ struct ContentView: View {
     
     func drawCard(){
         // Get a random card from deck
-        let drewCard = deck.randomElement()!
-        let cardSui = drewCard.cardSuit
-        let cardNum = checkSpecialCard(cardNumber: drewCard.cardNumber)
-        message = "Drew a \(cardNum) of \(cardSui)"
+        if let drewCard = deck.randomElement() {
+            // There is at least one card in the deck
+            let cardSui = drewCard.cardSuit
+            let cardNum = checkSpecialCard(cardNumber: drewCard.cardNumber)
+            message = "Drew a \(cardNum) of \(cardSui)"
+        } else {
+            // There is none cards in the deck
+        }
     }
     
     func checkSpecialCard(cardNumber:Int) -> String {
