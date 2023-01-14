@@ -7,13 +7,18 @@
 
 import SwiftUI
 
+struct card {
+    var cardNumber = 1
+    var cardSuit = "Spades"
+}
+
 struct ContentView: View {
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, reto!")
+            Spacer()
+            Spacer()
+            Spacer()
         }
         .padding()
     }
