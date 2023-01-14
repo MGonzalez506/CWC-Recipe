@@ -31,6 +31,10 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
+                Button("Nueva Carta") {
+                    // Create an instance of card
+                    var newCard = card()
+                }
                 Spacer()
                 Spacer()
             }
