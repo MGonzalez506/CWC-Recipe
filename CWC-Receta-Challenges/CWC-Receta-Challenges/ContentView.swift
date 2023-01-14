@@ -36,6 +36,8 @@ struct ContentView: View {
                     var newCard = card()
                     // Assign to newCard a random number from 1 to 13
                     newCard.cardNumber = Int.random(in: 1...13)
+                    // Assign to newCard a random suit from the 4 available
+                    newCard.cardSuit = suits[Int.random(in: 0...3)]
                 }
                 Spacer()
                 Spacer()
