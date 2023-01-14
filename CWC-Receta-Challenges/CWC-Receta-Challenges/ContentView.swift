@@ -17,6 +17,9 @@ struct ContentView: View {
     // Create an instance of your playing card structure
     var deck:[card] = [card]()
     
+    // Create an array with the 4 main suits
+    var suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
+    
     var body: some View {
         VStack {
             Spacer()
