@@ -29,6 +29,11 @@ struct ContentView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(Color.pink)
             Spacer()
+            HStack {
+                Spacer()
+                Spacer()
+                Spacer()
+            }
             Spacer()
         }
         .padding()
