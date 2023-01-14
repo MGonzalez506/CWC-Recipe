@@ -37,10 +37,14 @@ struct ContentView: View {
                 Button("Nueva Carta") {
                     addCard()
                 }
+                .font(.headline)
+                .foregroundColor(Color.pink)
                 Spacer()
                 Button("Drew Card") {
                     drawCard()
                 }
+                .font(.headline)
+                .foregroundColor(Color.pink)
                 Spacer()
             }
             Spacer()
@@ -78,6 +82,7 @@ struct ContentView: View {
             message = "Drew a \(cardNum) of \(cardSui)"
         } else {
             // There is none cards in the deck
+            message = "No cards in the deck"
         }
     }
     
