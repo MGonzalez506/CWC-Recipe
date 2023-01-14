@@ -34,6 +34,8 @@ struct ContentView: View {
                 Button("Nueva Carta") {
                     // Create an instance of card
                     var newCard = card()
+                    // Assign to newCard a random number from 1 to 13
+                    newCard.cardNumber = Int.random(in: 1...13)
                 }
                 Spacer()
                 Spacer()
