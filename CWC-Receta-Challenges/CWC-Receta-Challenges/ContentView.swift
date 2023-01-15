@@ -10,9 +10,14 @@ import SwiftUI
 struct ContentView: View {
     // Create array of words
     let palabras = ["Hola", "desde", "CostaRica","el","paísMásFeliz"]
+    // Create an array to display as list
+    @State var lista:[String] = []
+    
     var body: some View {
         VStack {
-            Text("Hola")
+            Button("New word") {
+                
+            }
         }
         .padding()
     }
