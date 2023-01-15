@@ -10,26 +10,25 @@ import SwiftUI
 struct ContentView: View {
     // Create list of elements
     @State var numbers:[Int] = []
+    // State of the buttons
+    @State var message = "Welcome"
     
     var body: some View {
-        VStack {
-            Spacer()
+        NavigationView {
             List(numbers, id: \.self) { numberElement in
                 Text(String(numberElement))
+            }.navigationBarTitle(Text(message))
+        }
+        HStack {
+            Button("ADD DIGIT") {
+                addDigit()
             }
-            Spacer()
-            HStack {
-                Button("ADD DIGIT") {
-                    addDigit()
-                }
-                Button("INCREASE DIGITS") {
-                    
-                }
-                Button("CLEAR ALL") {
-                    
-                }
+            Button("INCREASE DIGITS") {
+                
             }
-            Spacer()
+            Button("CLEAR ALL") {
+                
+            }
         }
     }
     
