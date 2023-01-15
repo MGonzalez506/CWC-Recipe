@@ -16,10 +16,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Button("New word") {
-                
+                displayList()
             }
         }
         .padding()
+    }
+    
+    func displayList() {
+        lista.append(palabras[Int.random(in: 0...(palabras.count-1))])
     }
 }
 
