@@ -13,6 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            Spacer()
             HStack {
                 Button("ADD DIGIT") {
                     addDigit()
@@ -24,6 +26,7 @@ struct ContentView: View {
                     
                 }
             }
+            Spacer()
         }
     }
     
