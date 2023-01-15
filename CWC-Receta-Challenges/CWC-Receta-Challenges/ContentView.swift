@@ -14,6 +14,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
+            List(numbers, id: \.self) { numberElement in
+                Text(String(numberElement))
+            }
             Spacer()
             HStack {
                 Button("ADD DIGIT") {
