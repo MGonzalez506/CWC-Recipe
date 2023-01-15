@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Create array of words
-    let palabras = ["Hola", "desde", "CostaRica","el","paísMásFeliz"]
+    // Create array of Costa Rican phrases
+    let frases = [
+        "¿Al Chile?",
+        "Colgar las tenis",
+        "Dar por la nuca",
+        "Está pal tigre",
+        "Hablar paja",
+        "Hay campo",
+        "Ir en carreras",
+        "La cereza del pastel",
+        "La última chupada del mango",
+        "Le amarraron el perro",
+        "Mucho rinrin y nada de helados"
+    ]
     // Create an array to display as list
     @State var lista:[String] = []
     
@@ -30,7 +42,7 @@ struct ContentView: View {
     }
     
     func addWord() {
-        lista.append(palabras[Int.random(in: 0...(palabras.count-1))])
+        lista.append(frases[Int.random(in: 0...(frases.count-1))])
     }
 }
 
