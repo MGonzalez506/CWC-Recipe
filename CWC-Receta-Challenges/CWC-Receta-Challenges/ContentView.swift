@@ -34,7 +34,7 @@ struct ContentView: View {
                 addDigit()
             }
             Button("INCREASE DIGITS") {
-                
+                increaseDigits()
             }
             Button("CLEAR ALL") {
                 
@@ -52,6 +52,15 @@ struct ContentView: View {
         } else {
             // Let user know that the random number is 7
             message = "Number 7 won't be added"
+        }
+    }
+    
+    func increaseDigits(){
+        // Loop through numbers and get each index
+        for index in 0...numbers.count-1 {
+            // Add 1 to the number stored in the array
+            // at that specific index
+            numbers[index] += 1
         }
     }
 }
