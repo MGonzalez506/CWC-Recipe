@@ -36,6 +36,8 @@ struct ContentView: View {
             Button("New word") {
                 addWord()
             }
+            .font(.headline)
+            .foregroundColor(.pink)
             Spacer()
         }
         .padding()
