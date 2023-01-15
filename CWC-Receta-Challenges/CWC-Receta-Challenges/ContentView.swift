@@ -37,7 +37,7 @@ struct ContentView: View {
                 increaseDigits()
             }
             Button("CLEAR ALL") {
-                
+                clearDigits()
             }
         }
     }
@@ -62,6 +62,10 @@ struct ContentView: View {
             // at that specific index
             numbers[index] += 1
         }
+    }
+    func clearDigits(){
+        // Remove all digits from the array
+        numbers.removeAll()
     }
 }
 
