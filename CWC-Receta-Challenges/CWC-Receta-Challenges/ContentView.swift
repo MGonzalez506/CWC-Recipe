@@ -48,6 +48,10 @@ struct ContentView: View {
         if number != 7 {
             // Add random number to list
             numbers.append(number)
+            message = "Adding digit \(number)"
+        } else {
+            // Let user know that the random number is 7
+            message = "Number 7 won't be added"
         }
     }
 }
