@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE6DEDB9297430C70010075E /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDB8297430C70010075E /* ViewList.swift */; };
+		BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBC2974775D0010075E /* ViewPhrases.swift */; };
 		BEB2E47C29730F0500E9048D /* CWC_Receta_ChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */; };
 		BEB2E47E29730F0500E9048D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E47D29730F0500E9048D /* ContentView.swift */; };
 		BEB2E48029730F0500E9048D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2E47F29730F0500E9048D /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		BE6DEDB8297430C70010075E /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
+		BE6DEDBC2974775D0010075E /* ViewPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhrases.swift; sourceTree = "<group>"; };
 		BEB2E47829730F0500E9048D /* CWC-Receta-Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CWC-Receta-Challenges.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWC_Receta_ChallengesApp.swift; sourceTree = "<group>"; };
 		BEB2E47D29730F0500E9048D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */,
 				BEB2E47D29730F0500E9048D /* ContentView.swift */,
+				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
 				BE6DEDB8297430C70010075E /* ViewList.swift */,
 				BEB2E47F29730F0500E9048D /* Assets.xcassets */,
 				BEB2E48129730F0500E9048D /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6DEDB9297430C70010075E /* ViewList.swift in Sources */,
+				BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */,
 				BEB2E47E29730F0500E9048D /* ContentView.swift in Sources */,
 				BEB2E47C29730F0500E9048D /* CWC_Receta_ChallengesApp.swift in Sources */,
 			);
