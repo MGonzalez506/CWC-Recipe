@@ -16,6 +16,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
+            // Display list
+            List(lista, id: \.self) { listElement in
+                Text(listElement)
+            }
             Spacer()
             Button("New word") {
                 addWord()
