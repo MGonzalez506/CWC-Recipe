@@ -11,13 +11,23 @@ struct ContentView: View {
     // Create list of elements
     @State var numbers:[Int] = []
     // State of the buttons
-    @State var message = "Welcome"
+    @State var message = "-"
     
     var body: some View {
         NavigationView {
             List(numbers, id: \.self) { numberElement in
                 Text(String(numberElement))
-            }.navigationBarTitle(Text(message))
+            }
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        Text("Tap a Button")
+                            .font(.headline)
+                        Text(message)
+                            .font(.body)
+                    }
+                }
+            }
         }
         HStack {
             Button("ADD DIGIT") {
