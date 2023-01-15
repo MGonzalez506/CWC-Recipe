@@ -70,6 +70,7 @@ struct ContentView: View {
     func clearDigits(){
         // Remove all digits from the array
         numbers.removeAll()
+        message = "-"
     }
 }
 
