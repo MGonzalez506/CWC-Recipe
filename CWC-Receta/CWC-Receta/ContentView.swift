@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Array of elements
+    let array = ["Element A", "Element B", "Element C", "Element D", "Element E"]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List (array, id: \.self) { arrayElement in
+            Text(arrayElement)
         }
-        .padding()
     }
 }
 
