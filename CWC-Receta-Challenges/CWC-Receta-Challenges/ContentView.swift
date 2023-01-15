@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             HStack {
                 Button("ADD DIGIT") {
-                    
+                    addDigit()
                 }
                 Button("INCREASE DIGITS") {
                     
@@ -25,6 +25,12 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    func addDigit(){
+        // Generate random number from 1 to 10
+        let number = Int.random(in: 1...10)
+        numbers.append(number)
     }
 }
 
