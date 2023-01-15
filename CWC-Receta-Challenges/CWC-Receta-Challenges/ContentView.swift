@@ -18,14 +18,14 @@ struct ContentView: View {
             Spacer()
             Spacer()
             Button("New word") {
-                displayList()
+                addWord()
             }
             Spacer()
         }
         .padding()
     }
     
-    func displayList() {
+    func addWord() {
         lista.append(palabras[Int.random(in: 0...(palabras.count-1))])
     }
 }
