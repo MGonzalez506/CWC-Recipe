@@ -56,11 +56,15 @@ struct ContentView: View {
     }
     
     func increaseDigits(){
-        // Loop through numbers and get each index
-        for index in 0...numbers.count-1 {
-            // Add 1 to the number stored in the array
-            // at that specific index
-            numbers[index] += 1
+        if numbers.isEmpty == true {
+            message = "Nothing to add"
+        } else {
+            // Loop through numbers and get each index
+            for index in 0...numbers.count-1 {
+                // Add 1 to the number stored in the array
+                // at that specific index
+                numbers[index] += 1
+            }
         }
     }
     func clearDigits(){
