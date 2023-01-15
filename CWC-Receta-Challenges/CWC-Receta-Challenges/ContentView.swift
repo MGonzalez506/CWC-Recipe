@@ -12,7 +12,19 @@ struct ContentView: View {
     @State var numbers:[Int] = []
     
     var body: some View {
-        Text("Hello")
+        VStack {
+            HStack {
+                Button("ADD DIGIT") {
+                    
+                }
+                Button("INCREASE DIGITS") {
+                    
+                }
+                Button("CLEAR ALL") {
+                    
+                }
+            }
+        }
     }
 }
 
