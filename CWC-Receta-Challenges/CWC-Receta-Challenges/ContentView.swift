@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    // Create array of words
+    let palabras = ["Hola", "desde", "CostaRica","el","paísMásFeliz"]
     var body: some View {
         VStack {
             Text("Hola")
