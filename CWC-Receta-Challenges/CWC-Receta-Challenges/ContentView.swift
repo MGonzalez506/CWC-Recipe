@@ -15,9 +15,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            Spacer()
             Button("New word") {
                 displayList()
             }
+            Spacer()
         }
         .padding()
     }
