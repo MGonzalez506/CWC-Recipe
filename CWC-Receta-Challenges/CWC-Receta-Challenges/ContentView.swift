@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+class Person {
+    var name = ""
+    
+    func introduceMySelf(){
+        print("Hi my name is \(name)")
+    }
+}
+
 struct ContentView: View {
     // Declare string that contains 4 names
     let names = ["Miguel", "Silvia", "Carmen", "Karely"]
