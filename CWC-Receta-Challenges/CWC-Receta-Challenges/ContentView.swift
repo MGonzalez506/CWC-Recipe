@@ -45,9 +45,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Button("Start the loop") {
-                
+                loop10Times()
             }
         }
+    }
+    
+    func loop10Times(){
+        // Loop 10 times
+        for _ in 1...10 {
+            // Get a random number from 1 to 3
+            let personNumber = Int.random(in: 1...3)
+            
+        }
+            //.navigationBarTitle("People classes")
     }
 }
 
