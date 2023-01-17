@@ -39,11 +39,12 @@ class Astronaut: Person {
 struct ContentView: View {
     // Declare string that contains 4 names
     let names = ["Miguel", "Silvia", "Carmen", "Karely"]
+    // Create a list to hold the person created
+    @State var people:[Person] = []
     
     var body: some View {
         NavigationView {
-            Text("Elements")
-                .navigationBarTitle("People classes")
+            
         }
     }
 }
