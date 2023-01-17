@@ -11,7 +11,14 @@ class Person {
     var name = ""
     
     func introduceMySelf(){
-        print("Hi my name is \(name)")
+        print("Hi, my name is \(name)")
+    }
+}
+
+class Chef: Person {
+    override func introduceMySelf() {
+        print("Hi, my name is \(name)")
+        print("I'm a chef")
     }
 }
 
