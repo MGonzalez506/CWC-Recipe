@@ -50,6 +50,7 @@ struct ContentView: View {
         }
     }
     
+    // Function loop 10 times
     func loop10Times(){
         // Loop 10 times
         for _ in 1...10 {
@@ -58,6 +59,23 @@ struct ContentView: View {
             
         }
             //.navigationBarTitle("People classes")
+    }
+    
+    // Function select one of the three available subclasses
+    func selectTypeOfPerson(personNumber:Int) -> Person{
+        switch personNumber {
+        case 1:
+            // return instance of Chef
+            return Chef()
+        case 2:
+            // return instance of Poet
+            return Poet()
+        case 3:
+            return Astronaut()
+        default:
+            // Default return Chef()
+            return Chef()
+        }
     }
 }
 
