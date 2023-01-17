@@ -22,6 +22,13 @@ class Chef: Person {
     }
 }
 
+class Poet: Person {
+    override func introduceMySelf() {
+        print("Hi, my name is \(name)")
+        print("I'm a poet")
+    }
+}
+
 struct ContentView: View {
     // Declare string that contains 4 names
     let names = ["Miguel", "Silvia", "Carmen", "Karely"]
