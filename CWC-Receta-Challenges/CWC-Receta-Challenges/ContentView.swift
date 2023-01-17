@@ -56,12 +56,13 @@ struct ContentView: View {
         for _ in 1...10 {
             // Get the corresponding PersonType
             let personType = getRandomTypeOfPerson()
-            
+            let personName = getRandomName()
         }
             //.navigationBarTitle("People classes")
     }
     
-    // Function select one of the three available subclasses
+    // Function select one of the three
+    // available subclasses
     func getRandomTypeOfPerson() -> Person{
         // Get a random number from 1 to 3
         let personNum = Int.random(in: 1...3)
@@ -79,6 +80,14 @@ struct ContentView: View {
             // Default return Chef()
             return Chef()
         }
+    }
+    
+    // Function get random name from list of
+    // available names
+    func getRandomName() -> String {
+        // Generate random name from 1 to 4
+        let randNameNum = Int.random(in: 1...4)
+        return names[randNameNum-1]
     }
 }
 
