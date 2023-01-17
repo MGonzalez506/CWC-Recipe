@@ -54,17 +54,18 @@ struct ContentView: View {
     func loop10Times(){
         // Loop 10 times
         for _ in 1...10 {
-            // Get a random number from 1 to 3
-            let personNum = Int.random(in: 1...3)
             // Get the corresponding PersonType
-            let personType = selectTypeOfPerson(personNum: personNum)
+            let personType = getRandomTypeOfPerson()
             
         }
             //.navigationBarTitle("People classes")
     }
     
     // Function select one of the three available subclasses
-    func selectTypeOfPerson(personNum:Int) -> Person{
+    func getRandomTypeOfPerson() -> Person{
+        // Get a random number from 1 to 3
+        let personNum = Int.random(in: 1...3)
+        
         switch personNum {
         case 1:
             // return instance of Chef
