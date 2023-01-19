@@ -56,7 +56,13 @@ struct ContentView: View {
         for _ in 1...10 {
             // Get the corresponding PersonType
             let personType = getRandomTypeOfPerson()
+            // Get random Name from array
             let personName = getRandomName()
+            // Assign that name to the Person Class
+            personType.name = personName
+            // Call introduceMySelf Method
+            personType.introduceMySelf()
+            
         }
             //.navigationBarTitle("People classes")
     }
