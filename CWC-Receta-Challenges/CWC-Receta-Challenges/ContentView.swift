@@ -18,21 +18,21 @@ class Person {
 class Chef: Person {
     override func introduceMySelf() {
         print("Hi, my name is \(name)")
-        print("I'm a chef")
+        print("I'm a chef\n")
     }
 }
 
 class Poet: Person {
     override func introduceMySelf() {
         print("Hi, my name is \(name)")
-        print("I'm a poet")
+        print("I'm a poet\n")
     }
 }
 
 class Astronaut: Person {
     override func introduceMySelf() {
         print("Hi, my name is \(name)")
-        print("I'm an astronaut")
+        print("I'm an astronaut\n")
     }
 }
 
