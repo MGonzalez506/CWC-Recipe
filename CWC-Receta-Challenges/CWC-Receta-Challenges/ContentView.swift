@@ -20,9 +20,13 @@ class TalkShowHosts {
 struct ContentView: View {
     // Declare string that contains 4 names
     let names = ["Miguel", "Silvia", "Carmen", "Karely"]
-    
+    @State var nameStruct_1 = ""
+    @State var nameStruct_2 = ""
     var body: some View {
         VStack {
+            Text("Structs")
+            Text(nameStruct_1)
+            Text(nameStruct_2)
             Button("New Struct Name") {
                 createNewTalkShowHost()
             }
