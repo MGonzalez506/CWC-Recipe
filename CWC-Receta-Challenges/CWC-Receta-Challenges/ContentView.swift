@@ -11,10 +11,10 @@ struct BasicBtnStyle: ButtonStyle{
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(width: 100.0, height: 50.0)
-            .foregroundColor(.black)
+            .foregroundColor(.white)
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.white, lineWidth: 1.5)
+                .stroke(Color.blue, lineWidth: 1.5)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.blue)
@@ -54,6 +54,7 @@ struct ContentView: View {
                 Button("New Struct Name") {
                     createNewTalkShowHost()
                 }
+                .buttonStyle(BasicBtnStyle())
             }
             Spacer()
             VStack {
