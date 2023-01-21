@@ -44,7 +44,7 @@ struct ContentView: View {
                 Text("Classes")
                     .font(.largeTitle)
                     .foregroundColor(Color.pink)
-                Text(nameStruct_2 + " | " + nameClass_1)
+                Text(nameClass_1 + " | " + nameClass_2)
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
@@ -73,11 +73,11 @@ struct ContentView: View {
     
     func createNewTalkShowHosts() {
         // Create instance of TalkShowHosts
-        var host = TalkShowHosts()
+        let host = TalkShowHosts()
         // Assign a random name from the array
         host.name = getRandomName()
         // Create an instance from the one already created
-        var b = host
+        let b = host
         b.name = getRandomName()
         // Assign the host.name class property to
         // the State property of nameClass_1
