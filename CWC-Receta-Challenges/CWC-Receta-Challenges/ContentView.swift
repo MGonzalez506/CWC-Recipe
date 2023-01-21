@@ -34,7 +34,8 @@ struct ContentView: View {
         host.name = getRandomName()
         // Create a copy of host
         var b = host
-        
+        // Assign a random name from the array
+        b.name = getRandomName()
     }
     
     // Function get random name from list of
