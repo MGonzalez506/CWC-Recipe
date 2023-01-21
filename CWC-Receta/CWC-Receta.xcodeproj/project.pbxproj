@@ -11,8 +11,9 @@
 		BE230B0B297302FD006AF8B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE230B0A297302FD006AF8B3 /* ContentView.swift */; };
 		BE230B0D297302FE006AF8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE230B0C297302FE006AF8B3 /* Assets.xcassets */; };
 		BE230B10297302FE006AF8B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */; };
-		BE230B1729730523006AF8B3 /* SomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE230B1629730523006AF8B3 /* SomeModel.swift */; };
 		BEDBE8EB297C6DE2009233A0 /* Lista.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8EA297C6DE2009233A0 /* Lista.swift */; };
+		BEDBE8EF297C6F65009233A0 /* ListaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8EE297C6F65009233A0 /* ListaModel.swift */; };
+		BEDBE8F1297C6FA3009233A0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F0297C6FA3009233A0 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +22,9 @@
 		BE230B0A297302FD006AF8B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE230B0C297302FE006AF8B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BE230B1629730523006AF8B3 /* SomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeModel.swift; sourceTree = "<group>"; };
 		BEDBE8EA297C6DE2009233A0 /* Lista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista.swift; sourceTree = "<group>"; };
+		BEDBE8EE297C6F65009233A0 /* ListaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaModel.swift; sourceTree = "<group>"; };
+		BEDBE8F0297C6FA3009233A0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,7 @@
 		BEDBE8E7297C6CD2009233A0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				BE230B1629730523006AF8B3 /* SomeModel.swift */,
+				BEDBE8EE297C6F65009233A0 /* ListaModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDBE8EA297C6DE2009233A0 /* Lista.swift */,
+				BEDBE8F0297C6FA3009233A0 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,8 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDBE8F1297C6FA3009233A0 /* Person.swift in Sources */,
+				BEDBE8EF297C6F65009233A0 /* ListaModel.swift in Sources */,
 				BE230B0B297302FD006AF8B3 /* ContentView.swift in Sources */,
-				BE230B1729730523006AF8B3 /* SomeModel.swift in Sources */,
 				BE230B09297302FD006AF8B3 /* CWC_RecetaApp.swift in Sources */,
 				BEDBE8EB297C6DE2009233A0 /* Lista.swift in Sources */,
 			);
