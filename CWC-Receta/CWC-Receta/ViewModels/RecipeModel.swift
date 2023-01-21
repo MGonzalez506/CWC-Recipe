@@ -18,4 +18,8 @@ class RecipeModel {
         recipes.append(Recipe(name: "Chilaquiles", cuisine: "Mexican"))
         recipes.append(Recipe(name: "Sushi", cuisine: "Japanese"))
     }
+    
+    func addRecipe() {
+        recipes.append(Recipe(name: "Burger", cuisine: "American"))
+    }
 }
