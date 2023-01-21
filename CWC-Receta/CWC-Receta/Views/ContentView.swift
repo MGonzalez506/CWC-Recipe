@@ -26,6 +26,9 @@ struct ContentView: View {
                 }
             }
             Spacer()
+            Button("Add Recipe") {
+                recipe.addRecipe()
+            }
             Spacer()
         }
     }
