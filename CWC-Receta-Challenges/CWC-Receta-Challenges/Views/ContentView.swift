@@ -32,9 +32,13 @@ struct ContentView: View {
         List(pizzas.pizzasList) { pizza in
             Text(pizza.name)
                 .font(.title)
-            Text(pizza.topping1)
-            Text(pizza.topping2)
-            Text(pizza.topping3)
+            HStack {
+                Text(pizza.topping1)
+                Text("-")
+                Text(pizza.topping2)
+                Text("-")
+                Text(pizza.topping3)
+            }
         }
     }
 }
