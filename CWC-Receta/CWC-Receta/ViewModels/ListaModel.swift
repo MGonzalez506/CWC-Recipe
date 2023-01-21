@@ -10,4 +10,11 @@ import Foundation
 class ListaModel {
     // Create array that contains Lista elements
     var elementos = [Lista]()
+    
+    // Add a couple of elments in Lista from
+    // the init() Method
+    init(){
+        // Create some dummy elements to add
+        
+    }
 }

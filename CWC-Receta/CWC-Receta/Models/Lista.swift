@@ -9,6 +9,6 @@ import Foundation
 
 struct Lista {
     // Array of elements
-    var array = ["Element A", "Element B", "Element C", "Element D", "Element E"]
+    var arrayOfElements = ["Element A", "Element B", "Element C", "Element D", "Element E"]
     
 }
