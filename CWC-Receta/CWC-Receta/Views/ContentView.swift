@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // Create instance of Lista model
+    var lista = ListaModel()
+    
     var body: some View {
         Text("Hola mundo")
         /*List (array, id: \.self) { arrayElement in
