@@ -22,6 +22,8 @@ struct ContentView: View {
     let names = ["Miguel", "Silvia", "Carmen", "Karely"]
     @State var nameStruct_1 = ""
     @State var nameStruct_2 = ""
+    @State var nameStruct_3 = ""
+    @State var nameStruct_4 = ""
     var body: some View {
         VStack {
             Spacer()
