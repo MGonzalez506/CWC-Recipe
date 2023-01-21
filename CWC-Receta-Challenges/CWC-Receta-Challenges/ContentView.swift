@@ -70,7 +70,13 @@ struct ContentView: View {
     }
     
     func createNewTalkShowHosts() {
-        
+        // Create instance of TalkShowHosts
+        var host = TalkShowHosts()
+        // Assign a random name from the array
+        host.name = getRandomName()
+        // Create an instance from the one already created
+        var b = host
+        b.name = getRandomName()
     }
     
     // Function get random name from list of
