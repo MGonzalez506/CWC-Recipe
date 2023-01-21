@@ -47,7 +47,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
                 Button("New Class Name") {
-                    createNewTalkShowHost()
+                    createNewTalkShowHosts()
                 }
             }
             Spacer()
@@ -67,6 +67,10 @@ struct ContentView: View {
         b.name = getRandomName()
         // Assign the generated name to the State property
         nameStruct_2 = b.name
+    }
+    
+    func createNewTalkShowHosts() {
+        
     }
     
     // Function get random name from list of
