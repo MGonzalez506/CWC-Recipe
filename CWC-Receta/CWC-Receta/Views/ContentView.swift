@@ -13,7 +13,7 @@ struct ContentView: View {
     var lista = ListaModel()
     
     var body: some View {
-        List(lista.elementos) { elemento in|
+        List(lista.elementos) { elemento in
             Text(elemento.name)
         }
     }
