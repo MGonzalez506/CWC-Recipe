@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Elementos {
+struct Elementos:Identifiable {
+    var id = UUID()
     var name = ""
 }

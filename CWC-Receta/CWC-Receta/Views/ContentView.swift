@@ -13,10 +13,9 @@ struct ContentView: View {
     var lista = ListaModel()
     
     var body: some View {
-        Text("Hola mundo")
-        /*List (array, id: \.self) { arrayElement in
-            Text(arrayElement)
-        }*/
+        List(lista.elementos) { elemento in|
+            Text(elemento.name)
+        }
     }
 }
 
