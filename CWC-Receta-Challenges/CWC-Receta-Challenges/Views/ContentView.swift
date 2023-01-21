@@ -25,6 +25,9 @@ struct BasicBtnStyle: ButtonStyle{
 }
 
 struct ContentView: View {
+    // Create instance of PizzaModel
+    let pizzas = PizzaModel()
+    
     var body: some View {
         Text("Hello, World!")
     }
