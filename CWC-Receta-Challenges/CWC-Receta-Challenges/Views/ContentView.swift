@@ -29,7 +29,7 @@ struct ContentView: View {
     let pizzas = PizzaModel()
     
     var body: some View {
-        List(pizzas.pizzas) { pizza in
+        List(pizzas.pizzasList) { pizza in
             
         }
     }

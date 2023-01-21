@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Pizza {
+class Pizza:Identifiable {
+    var id = UUID()
     var name = ""
     var topping1 = ""
     var topping2 = ""
