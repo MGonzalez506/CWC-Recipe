@@ -15,10 +15,10 @@ struct BasicBtnStyle: ButtonStyle{
             .foregroundColor(.white)
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.blue, lineWidth: 1.5)
+                .stroke(Color.pink, lineWidth: 1.5)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.blue)
+                        .fill(Color.pink)
                 )
             )
     }
@@ -69,6 +69,7 @@ struct ContentView: View {
                 Button("New Class Name") {
                     createNewTalkShowHosts()
                 }
+                .buttonStyle(BasicBtnStyle())
             }
             Spacer()
         }
