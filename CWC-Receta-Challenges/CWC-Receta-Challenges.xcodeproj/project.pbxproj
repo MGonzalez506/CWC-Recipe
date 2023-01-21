@@ -15,6 +15,7 @@
 		BEB2E48029730F0500E9048D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2E47F29730F0500E9048D /* Assets.xcassets */; };
 		BEB2E48329730F0500E9048D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2E48229730F0500E9048D /* Preview Assets.xcassets */; };
 		BEDBE8E4297C3F0E009233A0 /* ViewTypeOfPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8E3297C3F0E009233A0 /* ViewTypeOfPerson.swift */; };
+		BEDBE8E6297C5601009233A0 /* ViewStructVSClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BEB2E47F29730F0500E9048D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEB2E48229730F0500E9048D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEDBE8E3297C3F0E009233A0 /* ViewTypeOfPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTypeOfPerson.swift; sourceTree = "<group>"; };
+		BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStructVSClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */,
 				BEB2E47D29730F0500E9048D /* ContentView.swift */,
+				BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */,
 				BEDBE8E3297C3F0E009233A0 /* ViewTypeOfPerson.swift */,
 				BE6DEDBE297497930010075E /* ViewAddDigits.swift */,
 				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
@@ -154,6 +157,7 @@
 				BEDBE8E4297C3F0E009233A0 /* ViewTypeOfPerson.swift in Sources */,
 				BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */,
 				BEB2E47E29730F0500E9048D /* ContentView.swift in Sources */,
+				BEDBE8E6297C5601009233A0 /* ViewStructVSClass.swift in Sources */,
 				BEB2E47C29730F0500E9048D /* CWC_Receta_ChallengesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
