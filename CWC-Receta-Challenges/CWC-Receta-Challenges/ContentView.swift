@@ -25,7 +25,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Structs")
+                .font(.largeTitle)
+                .foregroundColor(Color.pink)
             Text(nameStruct_1 + " | " + nameStruct_2)
+                .font(.body)
+                .fontWeight(.bold)
+                .foregroundColor(Color.pink)
             Button("New Struct Name") {
                 createNewTalkShowHost()
             }
