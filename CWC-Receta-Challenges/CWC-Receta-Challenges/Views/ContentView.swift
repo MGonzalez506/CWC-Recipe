@@ -29,7 +29,9 @@ struct ContentView: View {
     let pizzas = PizzaModel()
     
     var body: some View {
-        Text("Hello, World!")
+        List(pizzas.pizzas) { pizza in
+            
+        }
     }
 }
 
