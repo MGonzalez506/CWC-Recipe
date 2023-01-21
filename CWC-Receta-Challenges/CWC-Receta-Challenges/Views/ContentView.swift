@@ -30,7 +30,11 @@ struct ContentView: View {
     
     var body: some View {
         List(pizzas.pizzasList) { pizza in
-            
+            Text(pizza.name)
+                .font(.title)
+            Text(pizza.topping1)
+            Text(pizza.topping2)
+            Text(pizza.topping3)
         }
     }
 }
