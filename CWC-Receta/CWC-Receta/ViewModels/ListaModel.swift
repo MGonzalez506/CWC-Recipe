@@ -9,12 +9,15 @@ import Foundation
 
 class ListaModel {
     // Create array that contains Lista elements
-    var elementos = [Lista]()
+    var elementos = [Elementos]()
     
     // Add a couple of elments in Lista from
     // the init() Method
     init(){
         // Create some dummy elements to add
+        var elemento = Elementos()
+        elemento.name = "Elemento 001"
+        elementos.append(elemento)
         
     }
 }

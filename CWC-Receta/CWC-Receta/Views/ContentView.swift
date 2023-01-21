@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        List (array, id: \.self) { arrayElement in
+        Text("Hola mundo")
+        /*List (array, id: \.self) { arrayElement in
             Text(arrayElement)
-        }
+        }*/
     }
 }
 
