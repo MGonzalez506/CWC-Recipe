@@ -61,6 +61,9 @@
 		BEB2E47A29730F0500E9048D /* CWC-Receta-Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				BEDBE8F8297C7CD2009233A0 /* ViewModels */,
+				BEDBE8F9297C7CEF009233A0 /* Models */,
+				BEDBE8FA297C7D0A009233A0 /* Views */,
 				BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */,
 				BEB2E47D29730F0500E9048D /* ContentView.swift */,
 				BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */,
@@ -80,6 +83,27 @@
 				BEB2E48229730F0500E9048D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEDBE8F8297C7CD2009233A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BEDBE8F9297C7CEF009233A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEDBE8FA297C7D0A009233A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
