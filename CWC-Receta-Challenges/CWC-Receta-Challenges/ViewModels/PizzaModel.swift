@@ -9,7 +9,7 @@ import Foundation
 
 class PizzaModel {
     // Create a list of Pizza model
-    var pizzas = [Pizza]()
+    var pizzasList = [Pizza]()
     
     // Init the list with three instances
     init(){
@@ -20,7 +20,7 @@ class PizzaModel {
         p1.topping2 = "Queso"
         p1.topping3 = "Pepperoni"
         // Append p1 to the list of pizzas
-        pizzas.append(p1)
+        pizzasList.append(p1)
         
         // Create second instance of pizza
         let p2 = Pizza()
@@ -29,7 +29,7 @@ class PizzaModel {
         p2.topping2 = "Queso"
         p2.topping3 = "Pepperoni"
         // Append p2 to the list of pizzas
-        pizzas.append(p2)
+        pizzasList.append(p2)
         
         // Create third instance of pizza
         let p3 = Pizza()
@@ -38,6 +38,6 @@ class PizzaModel {
         p3.topping2 = "Carne en trozos"
         p3.topping3 = "Cebolla"
         // Append p3 to the list of pizzas
-        pizzas.append(p3)
+        pizzasList.append(p3)
     }
 }
