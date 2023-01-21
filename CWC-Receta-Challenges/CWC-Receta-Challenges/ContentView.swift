@@ -30,7 +30,9 @@ struct ContentView: View {
     }
     
     func createNewTalkShowHost() {
+        // Create an instance of TalkShowHost struct
         var host = TalkShowHost()
+        // Assign a random name from the array
         host.name = getRandomName()
         // Create a copy of host
         var b = host
