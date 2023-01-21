@@ -44,7 +44,7 @@ struct ContentView: View {
                 Text("Classes")
                     .font(.largeTitle)
                     .foregroundColor(Color.pink)
-                Text(nameStruct_1 + " | " + nameStruct_2)
+                Text(nameStruct_2 + " | " + nameStruct_3)
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
