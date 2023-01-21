@@ -22,5 +22,8 @@ class ListaModel {
         // Create an instance of struct and
         // assign value of 002
         elementos.append(Elementos(name: "Elemento 002"))
+        elementos.append(Elementos(name: "Elemento 003"))
+        elementos.append(Elementos(name: "Elemento 004"))
+        elementos.append(Elementos(name: "Elemento 005"))
     }
 }
