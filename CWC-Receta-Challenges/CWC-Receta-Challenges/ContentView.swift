@@ -37,10 +37,14 @@ struct ContentView: View {
         var host = TalkShowHost()
         // Assign a random name from the array
         host.name = getRandomName()
+        // Assign the generated name to the State property
+        nameStruct_1 = host.name
         // Create a copy of host
         var b = host
         // Assign a random name from the array
         b.name = getRandomName()
+        // Assign the generated name to the State property
+        nameStruct_2 = b.name
     }
     
     // Function get random name from list of
