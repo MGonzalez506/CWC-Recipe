@@ -11,10 +11,17 @@ struct ContentView: View {
     
     // Create instance of Lista model
     var lista = ListaModel()
+    var recipe = RecipeModel()
     
     var body: some View {
-        List(lista.elementos) { elemento in
-            Text(elemento.name)
+        HStack {
+            List(lista.elementos) { elemento in
+                Text(elemento.name)
+            }
+            List(recipe.recipes) { receta in
+                Text(receta.name)
+                Text(receta.cuisine)
+            }
         }
     }
 }
