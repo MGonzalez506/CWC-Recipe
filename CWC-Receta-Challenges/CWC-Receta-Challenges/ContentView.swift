@@ -38,6 +38,18 @@ struct ContentView: View {
                 }
             }
             Spacer()
+            VStack {
+                Text("Classes")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.pink)
+                Text(nameStruct_1 + " | " + nameStruct_2)
+                    .font(.body)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.pink)
+                Button("New Class Name") {
+                    createNewTalkShowHost()
+                }
+            }
             Spacer()
         }
     }
