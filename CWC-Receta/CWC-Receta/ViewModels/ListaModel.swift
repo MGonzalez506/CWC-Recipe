@@ -19,5 +19,8 @@ class ListaModel {
         elemento.name = "Elemento 001"
         elementos.append(elemento)
         
+        // Create an instance of struct and
+        // assign value of 002
+        Elementos(name: "Elemento 002")
     }
 }
