@@ -34,6 +34,13 @@ struct ContentView: View {
         
     }
     
+    // Function get random name from list of
+    // available names
+    func getRandomName() -> String {
+        // Generate random name from 1 to 4
+        let randNameNum = Int.random(in: 1...4)
+        return names[randNameNum-1]
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
