@@ -8,5 +8,7 @@
 import Foundation
 
 struct Lista {
+    // Array of elements
+    let array = ["Element A", "Element B", "Element C", "Element D", "Element E"]
     
 }

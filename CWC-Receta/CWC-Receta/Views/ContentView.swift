@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Array of elements
-    let array = ["Element A", "Element B", "Element C", "Element D", "Element E"]
     
     var body: some View {
         List (array, id: \.self) { arrayElement in
