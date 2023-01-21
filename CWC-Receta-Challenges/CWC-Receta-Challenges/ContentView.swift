@@ -79,6 +79,12 @@ struct ContentView: View {
         // Create an instance from the one already created
         var b = host
         b.name = getRandomName()
+        // Assign the host.name class property to
+        // the State property of nameStruct_3
+        nameStruct_3 = host.name
+        // Assign the b.name class property to
+        // the State property of nameStruct_4
+        nameStruct_4 = b.name
     }
     
     // Function get random name from list of
