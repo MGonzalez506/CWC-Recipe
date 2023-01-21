@@ -7,6 +7,22 @@
 
 import SwiftUI
 
+struct BasicBtnStyle: ButtonStyle{
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(width: 100.0, height: 50.0)
+            .foregroundColor(.black)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.white, lineWidth: 1.5)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.blue)
+                )
+            )
+    }
+}
+
 // Struct TalkShowHost
 struct TalkShowHost {
     var name = ""
