@@ -65,9 +65,9 @@
 		BEB2E47A29730F0500E9048D /* CWC-Receta-Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				BEDBE8FA297C7D0A009233A0 /* Views */,
 				BEDBE8F8297C7CD2009233A0 /* ViewModels */,
 				BEDBE8F9297C7CEF009233A0 /* Models */,
-				BEDBE8FA297C7D0A009233A0 /* Views */,
 				BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */,
 				BEB2E47F29730F0500E9048D /* Assets.xcassets */,
 				BEB2E48129730F0500E9048D /* Preview Content */,
