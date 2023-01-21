@@ -22,8 +22,8 @@ struct ContentView: View {
     let names = ["Miguel", "Silvia", "Carmen", "Karely"]
     @State var nameStruct_1 = ""
     @State var nameStruct_2 = ""
-    @State var nameStruct_3 = ""
-    @State var nameStruct_4 = ""
+    @State var nameClass_1 = ""
+    @State var nameClass_2 = ""
     var body: some View {
         VStack {
             Spacer()
@@ -44,7 +44,7 @@ struct ContentView: View {
                 Text("Classes")
                     .font(.largeTitle)
                     .foregroundColor(Color.pink)
-                Text(nameStruct_2 + " | " + nameStruct_3)
+                Text(nameStruct_2 + " | " + nameClass_1)
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
@@ -80,11 +80,11 @@ struct ContentView: View {
         var b = host
         b.name = getRandomName()
         // Assign the host.name class property to
-        // the State property of nameStruct_3
-        nameStruct_3 = host.name
+        // the State property of nameClass_1
+        nameClass_1 = host.name
         // Assign the b.name class property to
-        // the State property of nameStruct_4
-        nameStruct_4 = b.name
+        // the State property of nameClass_2
+        nameClass_2 = b.name
     }
     
     // Function get random name from list of
