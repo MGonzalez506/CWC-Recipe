@@ -21,6 +21,6 @@ class ListaModel {
         
         // Create an instance of struct and
         // assign value of 002
-        Elementos(name: "Elemento 002")
+        elementos.append(Elementos(name: "Elemento 002"))
     }
 }
