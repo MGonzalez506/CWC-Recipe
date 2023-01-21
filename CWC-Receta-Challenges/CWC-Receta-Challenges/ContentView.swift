@@ -23,7 +23,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("Generate Struct Host Name") {
+            Button("New Struct Name") {
                 createNewTalkShowHost()
             }
         }
