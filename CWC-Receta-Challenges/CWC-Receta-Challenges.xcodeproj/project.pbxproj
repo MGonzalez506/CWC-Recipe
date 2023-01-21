@@ -65,12 +65,6 @@
 				BEDBE8F9297C7CEF009233A0 /* Models */,
 				BEDBE8FA297C7D0A009233A0 /* Views */,
 				BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */,
-				BEB2E47D29730F0500E9048D /* ContentView.swift */,
-				BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */,
-				BEDBE8E3297C3F0E009233A0 /* ViewTypeOfPerson.swift */,
-				BE6DEDBE297497930010075E /* ViewAddDigits.swift */,
-				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
-				BE6DEDB8297430C70010075E /* ViewList.swift */,
 				BEB2E47F29730F0500E9048D /* Assets.xcassets */,
 				BEB2E48129730F0500E9048D /* Preview Content */,
 			);
@@ -102,6 +96,12 @@
 		BEDBE8FA297C7D0A009233A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BEB2E47D29730F0500E9048D /* ContentView.swift */,
+				BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */,
+				BEDBE8E3297C3F0E009233A0 /* ViewTypeOfPerson.swift */,
+				BE6DEDBE297497930010075E /* ViewAddDigits.swift */,
+				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
+				BE6DEDB8297430C70010075E /* ViewList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
