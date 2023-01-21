@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,11 @@
 		BE230B0B297302FD006AF8B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE230B0A297302FD006AF8B3 /* ContentView.swift */; };
 		BE230B0D297302FE006AF8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE230B0C297302FE006AF8B3 /* Assets.xcassets */; };
 		BE230B10297302FE006AF8B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */; };
-		BE230B1729730523006AF8B3 /* SomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE230B1629730523006AF8B3 /* SomeModel.swift */; };
+		BEDBE8EF297C6F65009233A0 /* ListaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8EE297C6F65009233A0 /* ListaModel.swift */; };
+		BEDBE8F1297C6FA3009233A0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F0297C6FA3009233A0 /* Person.swift */; };
+		BEDBE8F3297C72B1009233A0 /* Elementos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F2297C72B1009233A0 /* Elementos.swift */; };
+		BEDBE8F5297C7967009233A0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F4297C7967009233A0 /* Recipe.swift */; };
+		BEDBE8F7297C79F1009233A0 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +24,11 @@
 		BE230B0A297302FD006AF8B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE230B0C297302FE006AF8B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BE230B1629730523006AF8B3 /* SomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeModel.swift; sourceTree = "<group>"; };
+		BEDBE8EE297C6F65009233A0 /* ListaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaModel.swift; sourceTree = "<group>"; };
+		BEDBE8F0297C6FA3009233A0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BEDBE8F2297C72B1009233A0 /* Elementos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elementos.swift; sourceTree = "<group>"; };
+		BEDBE8F4297C7967009233A0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +61,12 @@
 		BE230B07297302FD006AF8B3 /* CWC-Receta */ = {
 			isa = PBXGroup;
 			children = (
+				BEDBE8E7297C6CD2009233A0 /* ViewModels */,
+				BEDBE8E9297C6D27009233A0 /* Models */,
+				BEDBE8E8297C6CDC009233A0 /* Views */,
 				BE230B08297302FD006AF8B3 /* CWC_RecetaApp.swift */,
-				BE230B0A297302FD006AF8B3 /* ContentView.swift */,
 				BE230B0C297302FE006AF8B3 /* Assets.xcassets */,
 				BE230B0E297302FE006AF8B3 /* Preview Content */,
-				BE230B1629730523006AF8B3 /* SomeModel.swift */,
 			);
 			path = "CWC-Receta";
 			sourceTree = "<group>";
@@ -68,6 +77,33 @@
 				BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEDBE8E7297C6CD2009233A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BEDBE8EE297C6F65009233A0 /* ListaModel.swift */,
+				BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BEDBE8E8297C6CDC009233A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE230B0A297302FD006AF8B3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEDBE8E9297C6D27009233A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEDBE8F0297C6FA3009233A0 /* Person.swift */,
+				BEDBE8F2297C72B1009233A0 /* Elementos.swift */,
+				BEDBE8F4297C7967009233A0 /* Recipe.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +142,7 @@
 				};
 			};
 			buildConfigurationList = BE230B00297302FD006AF8B3 /* Build configuration list for PBXProject "CWC-Receta" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -140,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDBE8F7297C79F1009233A0 /* RecipeModel.swift in Sources */,
+				BEDBE8F1297C6FA3009233A0 /* Person.swift in Sources */,
+				BEDBE8EF297C6F65009233A0 /* ListaModel.swift in Sources */,
+				BEDBE8F3297C72B1009233A0 /* Elementos.swift in Sources */,
+				BEDBE8F5297C7967009233A0 /* Recipe.swift in Sources */,
 				BE230B0B297302FD006AF8B3 /* ContentView.swift in Sources */,
-				BE230B1729730523006AF8B3 /* SomeModel.swift in Sources */,
 				BE230B09297302FD006AF8B3 /* CWC_RecetaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
