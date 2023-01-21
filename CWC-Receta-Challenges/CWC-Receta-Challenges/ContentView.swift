@@ -7,70 +7,93 @@
 
 import SwiftUI
 
+class Person {
+    var name = ""
+    
+    func introduceMySelf(){
+        print("Hi, my name is \(name)")
+    }
+}
+
+class Chef: Person {
+    override func introduceMySelf() {
+        print("Hi, my name is \(name)")
+        print("I'm a chef\n")
+    }
+}
+
+class Poet: Person {
+    override func introduceMySelf() {
+        print("Hi, my name is \(name)")
+        print("I'm a poet\n")
+    }
+}
+
+class Astronaut: Person {
+    override func introduceMySelf() {
+        print("Hi, my name is \(name)")
+        print("I'm an astronaut\n")
+    }
+}
+
 struct ContentView: View {
-    // Create list of elements
-    @State var numbers:[Int] = []
-    // State of the buttons
-    @State var message = "-"
+    // Declare string that contains 4 names
+    let names = ["Miguel", "Silvia", "Carmen", "Karely"]
+    // Create a list to hold the person created
+    @State var people:[Person] = []
     
     var body: some View {
         NavigationView {
-            List(numbers, id: \.self) { numberElement in
-                Text(String(numberElement))
-            }
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    VStack {
-                        Text("Tap a Button")
-                            .font(.headline)
-                        Text(message)
-                            .font(.body)
-                    }
-                }
-            }
-        }
-        HStack {
-            Button("ADD DIGIT") {
-                addDigit()
-            }
-            Button("INCREASE DIGITS") {
-                increaseDigits()
-            }
-            Button("CLEAR ALL") {
-                clearDigits()
+            Button("Start the loop") {
+                loop10Times()
             }
         }
     }
     
-    func addDigit(){
-        // Generate random number from 1 to 10
-        let number = Int.random(in: 1...10)
-        if number != 7 {
-            // Add random number to list
-            numbers.append(number)
-            message = "Adding digit \(number)"
-        } else {
-            // Let user know that the random number is 7
-            message = "Number 7 won't be added"
+    // Function loop 10 times
+    func loop10Times(){
+        // Loop 10 times
+        for _ in 1...10 {
+            // Get the corresponding PersonType
+            let personType = getRandomTypeOfPerson()
+            // Get random Name from array
+            let personName = getRandomName()
+            // Assign that name to the Person Class
+            personType.name = personName
+            // Call introduceMySelf Method
+            personType.introduceMySelf()
+            
+        }
+            //.navigationBarTitle("People classes")
+    }
+    
+    // Function select one of the three
+    // available subclasses
+    func getRandomTypeOfPerson() -> Person{
+        // Get a random number from 1 to 3
+        let personNum = Int.random(in: 1...3)
+        
+        switch personNum {
+        case 1:
+            // return instance of Chef
+            return Chef()
+        case 2:
+            // return instance of Poet
+            return Poet()
+        case 3:
+            return Astronaut()
+        default:
+            // Default return Chef()
+            return Chef()
         }
     }
     
-    func increaseDigits(){
-        if numbers.isEmpty == true {
-            message = "Nothing to add"
-        } else {
-            // Loop through numbers and get each index
-            for index in 0...numbers.count-1 {
-                // Add 1 to the number stored in the array
-                // at that specific index
-                numbers[index] += 1
-            }
-        }
-    }
-    func clearDigits(){
-        // Remove all digits from the array
-        numbers.removeAll()
-        message = "-"
+    // Function get random name from list of
+    // available names
+    func getRandomName() -> String {
+        // Generate random name from 1 to 4
+        let randNameNum = Int.random(in: 1...4)
+        return names[randNameNum-1]
     }
 }
 
