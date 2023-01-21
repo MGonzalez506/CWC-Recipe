@@ -25,9 +25,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Structs")
-            HStack {
-                Text(nameStruct_1 + " | " + nameStruct_2)
-            }
+            Text(nameStruct_1 + " | " + nameStruct_2)
             Button("New Struct Name") {
                 createNewTalkShowHost()
             }
