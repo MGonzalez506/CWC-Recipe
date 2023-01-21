@@ -18,6 +18,9 @@ class TalkShowHosts {
 }
 
 struct ContentView: View {
+    // Declare string that contains 4 names
+    let names = ["Miguel", "Silvia", "Carmen", "Karely"]
+    
     var body: some View {
         VStack {
             Button("Generate Struct Host Name") {
@@ -30,6 +33,7 @@ struct ContentView: View {
         var host = TalkShowHost()
         
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
