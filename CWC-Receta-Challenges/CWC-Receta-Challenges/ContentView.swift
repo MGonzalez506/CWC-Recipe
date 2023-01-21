@@ -32,6 +32,9 @@ struct ContentView: View {
     func createNewTalkShowHost() {
         var host = TalkShowHost()
         host.name = getRandomName()
+        // Create a copy of host
+        var b = host
+        
     }
     
     // Function get random name from list of
