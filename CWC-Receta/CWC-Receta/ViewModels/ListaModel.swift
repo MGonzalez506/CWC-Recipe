@@ -8,5 +8,6 @@
 import Foundation
 
 class ListaModel {
+    // Create array that contains Lista elements
     var elementos = [Lista]()
 }
