@@ -8,5 +8,6 @@
 import Foundation
 
 struct Recipe {
-    
+    var name = ""
+    var cuisine = ""
 }
