@@ -11,17 +11,24 @@ struct ContentView: View {
     
     // Create instance of Lista model
     var lista = ListaModel()
-    var recipe = RecipeModel()
+    @ObservedObject var recipe = RecipeModel()
     
     var body: some View {
-        HStack {
-            List(lista.elementos) { elemento in
-                Text(elemento.name)
+        VStack {
+            Spacer()
+            HStack {
+                List(lista.elementos) { elemento in
+                    Text(elemento.name)
+                }
+                List(recipe.recipes) { receta in
+                    Text(receta.name + " - " + receta.cuisine)
+                }
             }
-            List(recipe.recipes) { receta in
-                Text(receta.name)
-                Text(receta.cuisine)
-            }
+            Spacer()
+            Button("Add Recipe") {
+                recipe.addRecipe()
+            }.buttonStyle(BasicBtnStyle())
+            Spacer()
         }
     }
 }

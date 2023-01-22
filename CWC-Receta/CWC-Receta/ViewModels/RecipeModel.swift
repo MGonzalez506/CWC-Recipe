@@ -7,9 +7,9 @@
 
 import Foundation
 
-class RecipeModel {
+class RecipeModel:ObservableObject {
     // Create an empty list of recipes
-    var recipes = [Recipe]()
+    @Published var recipes = [Recipe]()
     
     // Init the Recipe Model with some dummy recipes
     init() {
@@ -17,5 +17,10 @@ class RecipeModel {
         recipes.append(Recipe(name: "Pizza", cuisine: "Italian"))
         recipes.append(Recipe(name: "Chilaquiles", cuisine: "Mexican"))
         recipes.append(Recipe(name: "Sushi", cuisine: "Japanese"))
+    }
+    
+    // Function to add recipe
+    func addRecipe() {
+        recipes.append(Recipe(name: "Burger", cuisine: "American"))
     }
 }
