@@ -12,15 +12,20 @@ struct ContentView: View {
     let pizzas = PizzaModel()
     
     var body: some View {
-        List(pizzas.pizzasList) { pizza in
-            Text(pizza.name)
-                .font(.title)
-            HStack {
-                Text(pizza.topping1)
-                Text("-")
-                Text(pizza.topping2)
-                Text("-")
-                Text(pizza.topping3)
+        VStack {
+            List(pizzas.pizzasList) { pizza in
+                Text(pizza.name)
+                    .font(.title)
+                HStack {
+                    Text(pizza.topping1)
+                    Text("-")
+                    Text(pizza.topping2)
+                    Text("-")
+                    Text(pizza.topping3)
+                }
+            }
+            Button("Add Pinapple") {
+                <#code#>
             }
         }
     }
