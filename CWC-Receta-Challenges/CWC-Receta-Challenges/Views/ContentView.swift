@@ -7,23 +7,6 @@
 
 import SwiftUI
 
-struct BasicBtnStyle: ButtonStyle{
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            //.frame(width: 100.0, height: 50.0)
-            .padding(10)
-            .foregroundColor(.white)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.pink, lineWidth: 1.5)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.pink)
-                )
-            )
-    }
-}
-
 struct ContentView: View {
     // Create instance of PizzaModel
     let pizzas = PizzaModel()
