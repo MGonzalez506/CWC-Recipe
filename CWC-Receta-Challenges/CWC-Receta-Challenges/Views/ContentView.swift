@@ -25,7 +25,7 @@ struct ContentView: View {
                 }
             }
             Button("Add Pinapple") {
-                
+                pizzas.addPinapple()
             }
         }
     }
