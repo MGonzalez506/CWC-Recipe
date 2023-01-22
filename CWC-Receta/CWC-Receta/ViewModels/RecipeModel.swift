@@ -7,9 +7,9 @@
 
 import Foundation
 
-class RecipeModel {
+class RecipeModel:ObservableObject {
     // Create an empty list of recipes
-    var recipes = [Recipe]()
+    @Published var recipes = [Recipe]()
     
     // Init the Recipe Model with some dummy recipes
     init() {
