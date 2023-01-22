@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     // Create instance of PizzaModel
-    let pizzas = PizzaModel()
+    @ObservedObject var pizzas = PizzaModel()
     
     var body: some View {
         VStack {

@@ -7,9 +7,9 @@
 
 import Foundation
 
-class PizzaModel {
+class PizzaModel:ObservableObject {
     // Create a list of Pizza model
-    var pizzasList = [Pizza]()
+    @Published var pizzasList = [Pizza]()
     
     // Init the list with three instances
     init(){
