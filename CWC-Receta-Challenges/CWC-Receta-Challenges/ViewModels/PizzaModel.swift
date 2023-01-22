@@ -40,4 +40,13 @@ class PizzaModel:ObservableObject {
         // Append p3 to the list of pizzas
         pizzasList.append(p3)
     }
+    
+    // Change the topping1 in all of the
+    // elements in the array to "Pinappple"
+    func addPinapple(){
+        // Create a for loop to get to all elements in the array
+        for i in 1...pizzasList.count {
+            pizzasList[i-1].topping1 = "Pinapple"
+        }
+    }
 }
