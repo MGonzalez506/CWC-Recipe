@@ -12,7 +12,14 @@ struct ContentView: View {
     @State var names:[String]?
     
     var body: some View {
-        Text("Hola")
+        HStack {
+            Button("Set array to nil") {
+                
+            }
+            Button("Set names") {
+                
+            }
+        }
     }
 }
 
