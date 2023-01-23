@@ -24,9 +24,11 @@ struct ContentView: View {
                 Button("Set array to nil") {
                     
                 }
+                .buttonStyle(BasicBtnStyle())
                 Button("Set names") {
                     
                 }
+                .buttonStyle(BasicBtnStyle())
             }
         }
     }
