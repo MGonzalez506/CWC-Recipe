@@ -21,3 +21,11 @@ class Book {
         author = bookAuthor
     }
 }
+
+// Create Library class
+// In order to hold the properties and functions
+
+class Library {
+    
+    
+}
