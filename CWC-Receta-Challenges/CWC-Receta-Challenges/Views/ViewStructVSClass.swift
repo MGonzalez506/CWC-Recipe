@@ -62,11 +62,11 @@ struct ViewStructVSClass: View {
         // Create an instance of TalkShowHost struct
         var host = TalkShowHost()
         // Assign a random name from the array
-        host.name = getRandomName()
+        host.name = newNameModel().getRandomName()
         // Create a copy of host
         var b = host
         // Assign a random name from the array
-        b.name = getRandomName()
+        b.name = newNameModel().getRandomName()
         // Assign the generated name to the State property
         nameStruct_1 = host.name
         // Assign the generated name to the State property
@@ -77,10 +77,10 @@ struct ViewStructVSClass: View {
         // Create instance of TalkShowHosts
         let host = TalkShowHosts()
         // Assign a random name from the array
-        host.name = getRandomName()
+        host.name = newNameModel().getRandomName()
         // Create an instance from the one already created
         let b = host
-        b.name = getRandomName()
+        b.name = newNameModel().getRandomName()
         // Assign the host.name class property to
         // the State property of nameClass_1
         nameClass_1 = host.name
