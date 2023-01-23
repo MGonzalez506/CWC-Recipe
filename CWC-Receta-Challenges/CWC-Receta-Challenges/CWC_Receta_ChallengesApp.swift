@@ -11,7 +11,7 @@ import SwiftUI
 struct CWC_Receta_ChallengesApp: App {
     var body: some Scene {
         WindowGroup {
-            ViewStructVSClass()
+            ContentView()
         }
     }
 }
