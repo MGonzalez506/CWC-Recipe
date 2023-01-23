@@ -10,6 +10,7 @@
 		BE6DEDB9297430C70010075E /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDB8297430C70010075E /* ViewList.swift */; };
 		BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBC2974775D0010075E /* ViewPhrases.swift */; };
 		BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBE297497930010075E /* ViewAddDigits.swift */; };
+		BE75846B297F2633006C6732 /* ViewPizzas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75846A297F2633006C6732 /* ViewPizzas.swift */; };
 		BEB2E47C29730F0500E9048D /* CWC_Receta_ChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */; };
 		BEB2E47E29730F0500E9048D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2E47D29730F0500E9048D /* ContentView.swift */; };
 		BEB2E48029730F0500E9048D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2E47F29730F0500E9048D /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		BE6DEDB8297430C70010075E /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
 		BE6DEDBC2974775D0010075E /* ViewPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhrases.swift; sourceTree = "<group>"; };
 		BE6DEDBE297497930010075E /* ViewAddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAddDigits.swift; sourceTree = "<group>"; };
+		BE75846A297F2633006C6732 /* ViewPizzas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPizzas.swift; sourceTree = "<group>"; };
 		BEB2E47829730F0500E9048D /* CWC-Receta-Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CWC-Receta-Challenges.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB2E47B29730F0500E9048D /* CWC_Receta_ChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWC_Receta_ChallengesApp.swift; sourceTree = "<group>"; };
 		BEB2E47D29730F0500E9048D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				BE6DEDBE297497930010075E /* ViewAddDigits.swift */,
 				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
 				BE6DEDB8297430C70010075E /* ViewList.swift */,
+				BE75846A297F2633006C6732 /* ViewPizzas.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				BE6DEDB9297430C70010075E /* ViewList.swift in Sources */,
 				BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */,
 				BEDBE8E4297C3F0E009233A0 /* ViewTypeOfPerson.swift in Sources */,
+				BE75846B297F2633006C6732 /* ViewPizzas.swift in Sources */,
 				BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */,
 				BEDBE8FC297C7F3B009233A0 /* Pizza.swift in Sources */,
 				BEDBE900297C802A009233A0 /* PizzaModel.swift in Sources */,
