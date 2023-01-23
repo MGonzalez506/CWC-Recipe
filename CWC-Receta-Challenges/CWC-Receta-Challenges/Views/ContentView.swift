@@ -22,7 +22,7 @@ struct ContentView: View {
                 .foregroundColor(.pink)
             HStack {
                 Button("Set array to nil") {
-                    
+                    setArrayToNil()
                 }
                 .buttonStyle(BasicBtnStyle())
                 Button("Set names") {
