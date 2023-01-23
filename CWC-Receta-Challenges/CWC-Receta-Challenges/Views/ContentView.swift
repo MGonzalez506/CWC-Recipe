@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     // Declare an @State property for an array of Strings
     @State var names:[String]?
+    // Declare a Text element to show the status of array
+    @State var title = ""
     
     var body: some View {
         // Add two buttons in HStack container
