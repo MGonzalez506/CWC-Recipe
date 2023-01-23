@@ -8,27 +8,56 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Create instance of PizzaModel
-    @ObservedObject var pizzas = PizzaModel()
+    // Declare an @State property for an array of Strings
+    @State var names:[String]?
+    // Declare a Text element to show the status of array
+    @State var title = "MGonzalez506"
     
     var body: some View {
+        // Add two buttons in HStack container
+        
         VStack {
-            List(pizzas.pizzasList) { pizza in
-                Text(pizza.name)
-                    .font(.title)
-                HStack {
-                    Text(pizza.topping1)
-                    Text("-")
-                    Text(pizza.topping2)
-                    Text("-")
-                    Text(pizza.topping3)
+            Text(title)
+                .font(.largeTitle)
+                .foregroundColor(.pink)
+            Spacer()
+            if let names = names {
+                List(names, id:\.self) { name in
+                    Text(name)
                 }
             }
-            Button("Add Pinapple") {
-                pizzas.addPinapple()
+            Spacer()
+            HStack {
+                Spacer()
+                Button("Set array to nil") {
+                    setArrayToNil()
+                }
+                .buttonStyle(BasicBtnStyle())
+                Spacer()
+                Button("Set names") {
+                    setNames()
+                }
+                .buttonStyle(BasicBtnStyle())
+                Spacer()
             }
-            .buttonStyle(BasicBtnStyle())
         }
+    }
+    
+    func setArrayToNil() {
+        if names != nil {
+            // names array is nil
+            names = nil
+            title = "Assigned nill to array"
+        } else {
+            title = "Array already nil"
+        }
+    }
+    
+    func setNames() {
+        names = [String]()
+        names?.append(newNameModel().getRandomName())
+        names?.append(newNameModel().getRandomName())
+        names?.append(newNameModel().getRandomName())
     }
 }
 
