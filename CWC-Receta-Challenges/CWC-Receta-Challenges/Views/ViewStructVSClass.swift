@@ -19,7 +19,7 @@ class TalkShowHosts {
 
 struct ViewStructVSClass: View {
     // Declare string that contains 4 names
-    let names = ["Miguel", "Silvia", "Carmen", "Karely", "Justin", "Mariel", "Virginia", "Fernando", "Julián", "Armando", "Juan Carlos", "Daniel", "Leo", "Ronaldo", "Ferrán", "José", "Marcel", "Christian", "Julieta", "Camilo", "Eva", "Samuel", "Francella", "Gerardo", "Antonella", "Gabriel", "And", "Cristina", "Leonor", "María", "Alberto", "Roberto", "Javier", "Camila", "Fabiana", "Andrés", "Andrea", "Scott", "Tom", "Victoria", "Elia", "Valeria", "Julio", "Sergio", "Karol", "Carolina", "Carol"]
+    let names = NamesClass().names
     @State var nameStruct_1 = ""
     @State var nameStruct_2 = ""
     @State var nameClass_1 = ""
