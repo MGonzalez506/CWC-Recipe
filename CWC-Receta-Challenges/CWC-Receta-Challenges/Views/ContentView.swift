@@ -17,10 +17,15 @@ struct ContentView: View {
         // Add two buttons in HStack container
         
         VStack {
-            Spacer()
             Text(title)
                 .font(.largeTitle)
                 .foregroundColor(.pink)
+            Spacer()
+            if let names = names {
+                List(names, id:\.self) { name in
+                    Text(name)
+                }
+            }
             Spacer()
             HStack {
                 Spacer()
@@ -35,7 +40,6 @@ struct ContentView: View {
                 .buttonStyle(BasicBtnStyle())
                 Spacer()
             }
-            Spacer()
         }
     }
     
@@ -50,7 +54,10 @@ struct ContentView: View {
     }
     
     func setNames() {
-        
+        names = [String]()
+        names?.append(newNameModel().getRandomName())
+        names?.append(newNameModel().getRandomName())
+        names?.append(newNameModel().getRandomName())
     }
 }
 
