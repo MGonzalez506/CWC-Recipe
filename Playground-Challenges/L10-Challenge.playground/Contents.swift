@@ -27,5 +27,8 @@ class Book {
 
 class Library {
     
-    
+    // Create a variable catalogue with all the kvp
+    // of the books
+    var catalogue = ["ORW":Book("1984", "George Orwell"),
+                     "RAY":Book("Fahrenheit 451", "Ray Bradbury")]
 }
