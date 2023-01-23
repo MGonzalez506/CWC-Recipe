@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var names:[String]?
     
     var body: some View {
+        // Add two buttons in HStack container
         HStack {
             Button("Set array to nil") {
                 
