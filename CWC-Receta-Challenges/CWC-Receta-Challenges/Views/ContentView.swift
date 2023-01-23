@@ -15,12 +15,18 @@ struct ContentView: View {
     
     var body: some View {
         // Add two buttons in HStack container
-        HStack {
-            Button("Set array to nil") {
-                
-            }
-            Button("Set names") {
-                
+        
+        VStack {
+            Text(title)
+                .font(.largeTitle)
+                .foregroundColor(.pink)
+            HStack {
+                Button("Set array to nil") {
+                    
+                }
+                Button("Set names") {
+                    
+                }
             }
         }
     }
