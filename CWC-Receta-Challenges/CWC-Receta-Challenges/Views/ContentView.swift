@@ -22,6 +22,15 @@ struct ContentView: View {
             }
         }
     }
+    
+    func setArrayToNil() {
+        if names != nil {
+            // names array is nil
+            names = nil
+        } else {
+            
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
