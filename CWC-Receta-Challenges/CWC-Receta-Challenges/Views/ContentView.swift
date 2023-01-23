@@ -37,8 +37,9 @@ struct ContentView: View {
         if names != nil {
             // names array is nil
             names = nil
+            title = "Assigned nill to array"
         } else {
-            
+            title = "Array already nil"
         }
     }
 }
