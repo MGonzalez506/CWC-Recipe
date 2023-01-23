@@ -30,7 +30,7 @@ struct ContentView: View {
                 .buttonStyle(BasicBtnStyle())
                 Spacer()
                 Button("Set names") {
-                    
+                    setNames()
                 }
                 .buttonStyle(BasicBtnStyle())
                 Spacer()
@@ -47,6 +47,10 @@ struct ContentView: View {
         } else {
             title = "Array already nil"
         }
+    }
+    
+    func setNames() {
+        
     }
 }
 
