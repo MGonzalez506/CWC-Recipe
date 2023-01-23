@@ -35,4 +35,25 @@ class Library {
     // Create a dictionary called checkedOutBooks to hold
     // who has checked out the books
     var checkedOutBooks = [String:Person]()
+    
+    // Create function to searchByTitle
+    func searchByTitle(_ title:String) -> String {
+        // Search in catalogue
+        // - If book exists return "Available"
+        // - If book does not exists return "Checked out by name"
+        if let _ = catalogue[title]{
+            // The title exists therefore check if has been checked out
+            if let person = checkedOutBooks[title] {
+                // If return something, unwrap and return the message
+                // of who has checked out the book
+                return "Checked out by \(person.name!)"
+            } else {
+                // If it returns nil, no one has checked out this book
+                return "Available"
+            }
+        } else {
+            // The search in the catalogue for this title returned nil
+            return "Not in catalogue"
+        }
+    }
 }
