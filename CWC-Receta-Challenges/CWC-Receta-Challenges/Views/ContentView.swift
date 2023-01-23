@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Declare an @State property for an array of Strings
+    @State var names = [String]()
     
     var body: some View {
         Text("Hola")
