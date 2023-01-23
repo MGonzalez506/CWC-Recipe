@@ -17,19 +17,25 @@ struct ContentView: View {
         // Add two buttons in HStack container
         
         VStack {
+            Spacer()
             Text(title)
                 .font(.largeTitle)
                 .foregroundColor(.pink)
+            Spacer()
             HStack {
+                Spacer()
                 Button("Set array to nil") {
                     setArrayToNil()
                 }
                 .buttonStyle(BasicBtnStyle())
+                Spacer()
                 Button("Set names") {
                     
                 }
                 .buttonStyle(BasicBtnStyle())
+                Spacer()
             }
+            Spacer()
         }
     }
     
