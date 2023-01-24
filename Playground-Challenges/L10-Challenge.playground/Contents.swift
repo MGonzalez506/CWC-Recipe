@@ -79,4 +79,28 @@ class Library {
             return "Book doesn't exist"
         }
     }
+    
+    // Create function to checkIn a book
+    func checkIn(_ bookId:String) -> String {
+        // Check if the bookId is in the catalogue
+        var bookExists = false
+        for (key, _) in catalogue {
+            if key == bookId {
+                // The book exists
+                bookExists = true
+                if let _ = checkedOutBooks[key] {
+                    // The book has checked out at some point
+                    checkedOutBooks.removeValue(forKey: key)
+                    return "Succesfully checked in"
+                } else {
+                    // The book has not been checked out
+                    return "Error: Can't check in a book that hasn't been checked out"
+                }
+            }
+        }
+        if bookExists == false {
+            // The book did not exists
+            return "Book doesn's exist"
+        }
+    }
 }
