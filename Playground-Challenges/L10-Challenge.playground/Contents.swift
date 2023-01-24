@@ -56,4 +56,22 @@ class Library {
             return "Not in catalogue"
         }
     }
+    
+    // Create function to checkOut a book
+    func checkOut (_ bookId:String, _ person:Person) -> String {
+        if let _ = catalogue[bookId] {
+            // Book exists in the catalogue
+            if let _ = checkedOutBooks[bookId] {
+                // Book has checked out
+                return "Error: Book already checked out"
+            } else {
+                // Book has not being checked out
+                checkedOutBooks[bookId] = person
+                return "Succesfully checked out"
+            }
+        } else {
+            // Book does not exist in the catalogue
+            return "Book doesn't exist"
+        }
+    }
 }
