@@ -41,18 +41,23 @@ class Library {
         // Search in catalogue
         // - If book exists return "Available"
         // - If book does not exists return "Checked out by name"
-        if let _ = catalogue[title]{
-            // The title exists therefore check if has been checked out
-            if let person = checkedOutBooks[title] {
-                // If return something, unwrap and return the message
-                // of who has checked out the book
-                return "Checked out by \(person.name!)"
-            } else {
-                // If it returns nil, no one has checked out this book
-                return "Available"
+        var bookExists = false
+        for kvp in catalogue {
+            if kvp.value.title == title {
+                // The title exists therefore check if has been checked out
+                bookExists = true
+                if let person = checkedOutBooks[kvp.key] {
+                    // If return something, unwrap and return the message
+                    // of who has checked out the book
+                    return "Checked out by \(person.name!)"
+                } else {
+                    // If it returns nil, no one has checked out this book
+                    return "Available"
+                }
             }
-        } else {
-            // The search in the catalogue for this title returned nil
+        }
+        if bookExists == false {
+            // The search in the catalogue for this title returned false
             return "Not in catalogue"
         }
     }
