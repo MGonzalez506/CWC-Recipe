@@ -104,3 +104,6 @@ class Library {
         }
     }
 }
+
+// Create instance of Library
+let libreria = Library()
