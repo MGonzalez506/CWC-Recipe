@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Jamón y Queso",
+        "toppings":[
+            "Salsa",
+            "Jamón",
+            "Queso"
+        ]
+    },
+    {
+        "name":"Pepperoni",
+        "toppings":[
+            "Salsa",
+            "Queso",
+            "Pepperoni"
+        ]
+    },
+    {
+        "name":"Suprema",
+        "toppings":[
+            "Salsa",
+            "Carne en trozos",
+            "Cebolla"
+        ]
+    }
+]
