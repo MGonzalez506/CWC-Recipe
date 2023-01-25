@@ -18,6 +18,8 @@ class RecipeModel:ObservableObject {
         
         if let pathString = pathString {
             // The path exists
+            // Create a url object
+            let url = URL(fileURLWithPath: pathString)
         }
         /*
         recipes.append(Recipe(name: "Gallo Pinto", cuisine: "Costa Rican"))
