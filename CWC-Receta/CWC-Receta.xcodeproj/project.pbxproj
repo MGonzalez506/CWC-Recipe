@@ -17,6 +17,7 @@
 		BEDBE8F3297C72B1009233A0 /* Elementos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F2297C72B1009233A0 /* Elementos.swift */; };
 		BEDBE8F5297C7967009233A0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F4297C7967009233A0 /* Recipe.swift */; };
 		BEDBE8F7297C79F1009233A0 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */; };
+		BEDC16BA298163D700716AC5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BEDC16B9298163D700716AC5 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BEDBE8F2297C72B1009233A0 /* Elementos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elementos.swift; sourceTree = "<group>"; };
 		BEDBE8F4297C7967009233A0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		BEDC16B9298163D700716AC5 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BEDBE8E7297C6CD2009233A0 /* ViewModels */,
 				BEDBE8E9297C6D27009233A0 /* Models */,
 				BE230B08297302FD006AF8B3 /* CWC_RecetaApp.swift */,
+				BEDC16B8298163C300716AC5 /* Data */,
 				BE230B0C297302FE006AF8B3 /* Assets.xcassets */,
 				BE230B0E297302FE006AF8B3 /* Preview Content */,
 			);
@@ -107,6 +110,14 @@
 				BED3D029297C874F00416260 /* BasicBtnStyle.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BEDC16B8298163C300716AC5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC16B9298163D700716AC5 /* data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE230B10297302FE006AF8B3 /* Preview Assets.xcassets in Resources */,
+				BEDC16BA298163D700716AC5 /* data.json in Resources */,
 				BE230B0D297302FE006AF8B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
