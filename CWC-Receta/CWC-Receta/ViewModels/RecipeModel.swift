@@ -13,6 +13,8 @@ class RecipeModel:ObservableObject {
     
     // Init the Recipe Model with some dummy recipes
     init() {
+        // Get the path to the json file within the app bundle
+        let pathString = Bundle.main.path(forResource: "data", ofType: "json")
         /*
         recipes.append(Recipe(name: "Gallo Pinto", cuisine: "Costa Rican"))
         recipes.append(Recipe(name: "Pizza", cuisine: "Italian"))
