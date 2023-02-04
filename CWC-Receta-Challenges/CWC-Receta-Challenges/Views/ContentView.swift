@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // Create an Observed object to list all the pizzas
+    @ObservedObject var pizzas = PizzaIngredientsModel()
+    
     var body: some View {
         VStack {
             
