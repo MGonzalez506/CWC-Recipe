@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PizzaIngredientsModel {
+class PizzaIngredientsModel:ObservableObject {
     
     // Create an empty list of pizzas
     @Published var pizzas = [Pizza]()
