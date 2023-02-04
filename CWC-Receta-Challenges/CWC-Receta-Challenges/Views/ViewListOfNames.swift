@@ -54,6 +54,10 @@ struct ViewListOfNames: View {
     }
     
     func setNames() {
+        // Display title that new names have been assigned
+        title = "New Names Assigned"
+        
+        // Create array to hold people names
         names = [String]()
         names?.append(newNameModel().getRandomName())
         names?.append(newNameModel().getRandomName())
