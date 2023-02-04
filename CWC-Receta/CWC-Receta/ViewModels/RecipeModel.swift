@@ -41,6 +41,8 @@ class RecipeModel:ObservableObject {
                 // Execution will come here if error is thrown
                 print(error)
             }
+        } else {
+            print("File Path not found")
         }
         /*
         recipes.append(Recipe(name: "Gallo Pinto", cuisine: "Costa Rican"))
