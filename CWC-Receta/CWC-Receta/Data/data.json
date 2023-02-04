@@ -1,7 +1,15 @@
 [
     {
-        "name":"Spaghetti",
+        "name":"Gallo Pinto",
+        "cuisine":"Costa Rican"
+    },
+    {
+        "name":"Pizza",
         "cuisine":"Italian"
+    },
+    {
+        "name":"Chilaquiles",
+        "cuisine":"Mexican"
     },
     {
         "name":"Sushi",

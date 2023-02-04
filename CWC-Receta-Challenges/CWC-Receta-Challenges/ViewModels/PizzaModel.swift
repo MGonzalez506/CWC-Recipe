@@ -14,7 +14,7 @@ class PizzaModel:ObservableObject {
     // Init the list with three instances
     init(){
         // Create first instance of pizza
-        var p1 = Pizza()
+        let p1 = Pizza()
         p1.name = "Pepperoni"
         p1.topping1 = "Salsa"
         p1.topping2 = "Queso"
@@ -23,7 +23,7 @@ class PizzaModel:ObservableObject {
         pizzasList.append(p1)
         
         // Create second instance of pizza
-        var p2 = Pizza()
+        let p2 = Pizza()
         p2.name = "Jamón y queso"
         p2.topping1 = "Salsa"
         p2.topping2 = "Queso"
@@ -32,7 +32,7 @@ class PizzaModel:ObservableObject {
         pizzasList.append(p2)
         
         // Create third instance of pizza
-        var p3 = Pizza()
+        let p3 = Pizza()
         p3.name = "Suprema"
         p3.topping1 = "Salsa"
         p3.topping2 = "Carne en trozos"

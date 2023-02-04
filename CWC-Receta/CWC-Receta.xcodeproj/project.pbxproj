@@ -11,13 +11,14 @@
 		BE230B0B297302FD006AF8B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE230B0A297302FD006AF8B3 /* ContentView.swift */; };
 		BE230B0D297302FE006AF8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE230B0C297302FE006AF8B3 /* Assets.xcassets */; };
 		BE230B10297302FE006AF8B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */; };
+		BE28C488298DDE6F0061CF76 /* ViewAddRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C487298DDE6F0061CF76 /* ViewAddRecipe.swift */; };
+		BE28C48B298E91FE0061CF76 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BE28C48A298E91FE0061CF76 /* data.json */; };
 		BED3D02A297C874F00416260 /* BasicBtnStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3D029297C874F00416260 /* BasicBtnStyle.swift */; };
 		BEDBE8EF297C6F65009233A0 /* ListaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8EE297C6F65009233A0 /* ListaModel.swift */; };
 		BEDBE8F1297C6FA3009233A0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F0297C6FA3009233A0 /* Person.swift */; };
 		BEDBE8F3297C72B1009233A0 /* Elementos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F2297C72B1009233A0 /* Elementos.swift */; };
 		BEDBE8F5297C7967009233A0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F4297C7967009233A0 /* Recipe.swift */; };
 		BEDBE8F7297C79F1009233A0 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */; };
-		BEDC16BA298163D700716AC5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BEDC16B9298163D700716AC5 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +27,14 @@
 		BE230B0A297302FD006AF8B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE230B0C297302FE006AF8B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE28C487298DDE6F0061CF76 /* ViewAddRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAddRecipe.swift; sourceTree = "<group>"; };
+		BE28C48A298E91FE0061CF76 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		BED3D029297C874F00416260 /* BasicBtnStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBtnStyle.swift; sourceTree = "<group>"; };
 		BEDBE8EE297C6F65009233A0 /* ListaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaModel.swift; sourceTree = "<group>"; };
 		BEDBE8F0297C6FA3009233A0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BEDBE8F2297C72B1009233A0 /* Elementos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elementos.swift; sourceTree = "<group>"; };
 		BEDBE8F4297C7967009233A0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BEDBE8F6297C79F1009233A0 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
-		BEDC16B9298163D700716AC5 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +67,11 @@
 		BE230B07297302FD006AF8B3 /* CWC-Receta */ = {
 			isa = PBXGroup;
 			children = (
+				BE28C489298E912D0061CF76 /* Data */,
 				BEDBE8E8297C6CDC009233A0 /* Views */,
 				BEDBE8E7297C6CD2009233A0 /* ViewModels */,
 				BEDBE8E9297C6D27009233A0 /* Models */,
 				BE230B08297302FD006AF8B3 /* CWC_RecetaApp.swift */,
-				BEDC16B8298163C300716AC5 /* Data */,
 				BE230B0C297302FE006AF8B3 /* Assets.xcassets */,
 				BE230B0E297302FE006AF8B3 /* Preview Content */,
 			);
@@ -82,6 +84,14 @@
 				BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE28C489298E912D0061CF76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BE28C48A298E91FE0061CF76 /* data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		BEDBE8E7297C6CD2009233A0 /* ViewModels */ = {
@@ -97,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				BE230B0A297302FD006AF8B3 /* ContentView.swift */,
+				BE28C487298DDE6F0061CF76 /* ViewAddRecipe.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,14 +121,6 @@
 				BED3D029297C874F00416260 /* BasicBtnStyle.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		BEDC16B8298163C300716AC5 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				BEDC16B9298163D700716AC5 /* data.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE230B10297302FE006AF8B3 /* Preview Assets.xcassets in Resources */,
-				BEDC16BA298163D700716AC5 /* data.json in Resources */,
+				BE28C48B298E91FE0061CF76 /* data.json in Resources */,
 				BE230B0D297302FE006AF8B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +200,7 @@
 				BEDBE8F3297C72B1009233A0 /* Elementos.swift in Sources */,
 				BEDBE8F5297C7967009233A0 /* Recipe.swift in Sources */,
 				BED3D02A297C874F00416260 /* BasicBtnStyle.swift in Sources */,
+				BE28C488298DDE6F0061CF76 /* ViewAddRecipe.swift in Sources */,
 				BE230B0B297302FD006AF8B3 /* ContentView.swift in Sources */,
 				BE230B09297302FD006AF8B3 /* CWC_RecetaApp.swift in Sources */,
 			);
