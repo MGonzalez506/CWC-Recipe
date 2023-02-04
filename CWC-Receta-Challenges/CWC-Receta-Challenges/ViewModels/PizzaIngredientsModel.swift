@@ -35,6 +35,11 @@ class PizzaIngredientsModel {
                 do {
                     // Decode the data and transform into Pizza Array
                     let pizzaArray = try decoder.decode([Pizza].self, from: data)
+                    
+                    // Set unique ID to pizzas in the data Array
+                    for pizza in pizzaArray {
+                        pizza.id = UUID()
+                    }
                 } catch {
                     // Print error in case of thrown
                     print(error)
