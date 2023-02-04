@@ -17,5 +17,11 @@ class PizzaIngredientsModel {
         // Get the path to the json file within the app bundle
         let pathString = Bundle.main.path(forResource: "pizza", ofType: "json")
         
+        // Use optional binding to check if PathString exists
+        if let pathString = pathString {
+            
+        } else {
+            print("The path have not been found. Check the JSON File path")
+        }
     }
 }
