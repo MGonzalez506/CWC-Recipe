@@ -44,16 +44,14 @@ class RecipeModel:ObservableObject {
         } else {
             print("File Path not found")
         }
-        /*
-        recipes.append(Recipe(name: "Gallo Pinto", cuisine: "Costa Rican"))
-        recipes.append(Recipe(name: "Pizza", cuisine: "Italian"))
-        recipes.append(Recipe(name: "Chilaquiles", cuisine: "Mexican"))
-        recipes.append(Recipe(name: "Sushi", cuisine: "Japanese"))
-         */
     }
     
     // Function to add recipe
     func addRecipe() {
-        //recipes.append(Recipe(name: "Burger", cuisine: "American"))
+        recipes.append(Recipe(name: "Gallo Pinto", cuisine: "Costa Rican"))
+        recipes.append(Recipe(name: "Pizza", cuisine: "Italian"))
+        recipes.append(Recipe(name: "Chilaquiles", cuisine: "Mexican"))
+        recipes.append(Recipe(name: "Sushi", cuisine: "Japanese"))
+        recipes.append(Recipe(name: "Burger", cuisine: "American"))
     }
 }

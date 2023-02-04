@@ -65,6 +65,7 @@
 		BE230B07297302FD006AF8B3 /* CWC-Receta */ = {
 			isa = PBXGroup;
 			children = (
+				BE28C489298E912D0061CF76 /* Data */,
 				BEDBE8E8297C6CDC009233A0 /* Views */,
 				BEDBE8E7297C6CD2009233A0 /* ViewModels */,
 				BEDBE8E9297C6D27009233A0 /* Models */,
@@ -81,6 +82,13 @@
 				BE230B0F297302FE006AF8B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE28C489298E912D0061CF76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		BEDBE8E7297C6CD2009233A0 /* ViewModels */ = {
