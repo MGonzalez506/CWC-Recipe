@@ -11,4 +11,9 @@ class PizzaIngredientsModel {
     
     // Create an empty list of pizzas
     @Published var pizzas = [Pizza]()
+    
+    // Init the pizza model with data from JSON
+    init() {
+        
+    }
 }
