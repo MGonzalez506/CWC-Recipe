@@ -10,6 +10,7 @@
 		BE28C48D298EA59A0061CF76 /* ViewListOfNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */; };
 		BE28C48F298EA7050061CF76 /* PizzaIngredientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */; };
 		BE28C491298EB24F0061CF76 /* PizzaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C490298EB24F0061CF76 /* PizzaInfo.swift */; };
+		BE28C493298EDA760061CF76 /* ViewPizzasFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C492298EDA760061CF76 /* ViewPizzasFromJSON.swift */; };
 		BE6DEDB9297430C70010075E /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDB8297430C70010075E /* ViewList.swift */; };
 		BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBC2974775D0010075E /* ViewPhrases.swift */; };
 		BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBE297497930010075E /* ViewAddDigits.swift */; };
@@ -32,6 +33,7 @@
 		BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListOfNames.swift; sourceTree = "<group>"; };
 		BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngredientsModel.swift; sourceTree = "<group>"; };
 		BE28C490298EB24F0061CF76 /* PizzaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaInfo.swift; sourceTree = "<group>"; };
+		BE28C492298EDA760061CF76 /* ViewPizzasFromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPizzasFromJSON.swift; sourceTree = "<group>"; };
 		BE6DEDB8297430C70010075E /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
 		BE6DEDBC2974775D0010075E /* ViewPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhrases.swift; sourceTree = "<group>"; };
 		BE6DEDBE297497930010075E /* ViewAddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAddDigits.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
 				BE6DEDB8297430C70010075E /* ViewList.swift */,
 				BE75846A297F2633006C6732 /* ViewPizzas.swift */,
+				BE28C492298EDA760061CF76 /* ViewPizzasFromJSON.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */,
 				BEDBE8E4297C3F0E009233A0 /* ViewTypeOfPerson.swift in Sources */,
 				BE28C491298EB24F0061CF76 /* PizzaInfo.swift in Sources */,
+				BE28C493298EDA760061CF76 /* ViewPizzasFromJSON.swift in Sources */,
 				BE75846F297F38D6006C6732 /* newNameModel.swift in Sources */,
 				BE75846B297F2633006C6732 /* ViewPizzas.swift in Sources */,
 				BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */,
