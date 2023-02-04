@@ -40,6 +40,10 @@ class PizzaIngredientsModel {
                     for pizza in pizzaArray {
                         pizza.id = UUID()
                     }
+                    
+                    // Assign the data Array to the property pizzas
+                    // In order to update the screen
+                    self.pizzas = pizzaArray
                 } catch {
                     // Print error in case of thrown
                     print(error)
