@@ -32,6 +32,12 @@ class RecipeModel:ObservableObject {
                     // Decoder throws
                     let recipeArray = try decoder.decode([Recipe].self, from: data)
                     
+                    // Set unique IDs for each instance
+                    for receta in recipeArray {
+                        // Set unique ID for each recipe in the recipeArray
+                        receta.id = UUID()
+                    }
+                    
                     // Assign recipeArray to recipes Published Model
                     self.recipes = recipeArray
                 }
