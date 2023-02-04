@@ -9,4 +9,6 @@ import Foundation
 
 struct PizzaIngredientsModel {
     
+    // Create an empty list of pizzas
+    @Published var pizzas = [Pizza]()
 }
