@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE28C48D298EA59A0061CF76 /* ViewListOfNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */; };
+		BE28C48F298EA7050061CF76 /* PizzaIngredientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */; };
 		BE6DEDB9297430C70010075E /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDB8297430C70010075E /* ViewList.swift */; };
 		BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBC2974775D0010075E /* ViewPhrases.swift */; };
 		BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBE297497930010075E /* ViewAddDigits.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListOfNames.swift; sourceTree = "<group>"; };
+		BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngredientsModel.swift; sourceTree = "<group>"; };
 		BE6DEDB8297430C70010075E /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
 		BE6DEDBC2974775D0010075E /* ViewPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhrases.swift; sourceTree = "<group>"; };
 		BE6DEDBE297497930010075E /* ViewAddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAddDigits.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				BEDBE8FF297C802A009233A0 /* PizzaModel.swift */,
 				BE75846E297F38D6006C6732 /* newNameModel.swift */,
+				BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6DEDB9297430C70010075E /* ViewList.swift in Sources */,
+				BE28C48F298EA7050061CF76 /* PizzaIngredientsModel.swift in Sources */,
 				BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */,
 				BEDBE8E4297C3F0E009233A0 /* ViewTypeOfPerson.swift in Sources */,
 				BE75846F297F38D6006C6732 /* newNameModel.swift in Sources */,
