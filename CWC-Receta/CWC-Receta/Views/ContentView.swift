@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //Create observable object of the model to display
+    @ObservedObject var model = RecipeModel()
+    
     var body: some View {
         VStack {
             
