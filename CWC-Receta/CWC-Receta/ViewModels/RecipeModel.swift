@@ -30,7 +30,7 @@ class RecipeModel:ObservableObject {
                 let decoder = JSONDecoder()
                 do {
                     // Decoder throws
-                    decoder.decode([Recipe].self, from: data)
+                    try decoder.decode([Recipe].self, from: data)
                 }
                 catch {
                     // Print the error
