@@ -19,6 +19,9 @@ class PizzaIngredientsModel {
         
         // Use optional binding to check if PathString exists
         if let pathString = pathString {
+            // The path exists
+            // Create a url object
+            let url = URL(fileURLWithPath: pathString)
             
         } else {
             print("The path have not been found. Check the JSON File path")
