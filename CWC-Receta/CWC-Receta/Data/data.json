@@ -1,0 +1,22 @@
+[
+    {
+        "recipe":"Gallo Pinto",
+        "cuisine":"Costa Rican"
+    },
+    {
+        "recipe":"Pizza",
+        "cuisine":"Italian"
+    },
+    {
+        "recipe":"Chilaquiles",
+        "cuisine":"Mexican"
+    },
+    {
+        "recipe":"Sushi",
+        "cuisine":"Japanese"
+    },
+    {
+        "recipe":"Burger",
+        "cuisine":"American"
+    }
+]
