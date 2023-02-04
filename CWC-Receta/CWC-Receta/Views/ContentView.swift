@@ -14,7 +14,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            
+            List(model.recipes) { receta in
+                VStack(alignment: .leading) {
+                    Text(receta.name)
+                        .font(.title)
+                    Text(receta.cuisine)
+                }
+            }
         }
     }
 }
