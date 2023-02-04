@@ -10,7 +10,7 @@ import Foundation
 class PizzaIngredientsModel:ObservableObject {
     
     // Create an empty list of pizzas
-    @Published var pizzas = [Pizza]()
+    @Published var pizzas = [PizzaInfo]()
     
     // Init the pizza model with data from JSON
     init() {
@@ -34,7 +34,7 @@ class PizzaIngredientsModel:ObservableObject {
                 // Handle error if decoder throws
                 do {
                     // Decode the data and transform into Pizza Array
-                    let pizzaArray = try decoder.decode([Pizza].self, from: data)
+                    let pizzaArray = try decoder.decode([PizzaInfo].self, from: data)
                     
                     // Set unique ID to pizzas in the data Array
                     for pizza in pizzaArray {

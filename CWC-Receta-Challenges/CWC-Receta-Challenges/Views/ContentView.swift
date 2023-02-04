@@ -10,11 +10,18 @@ import SwiftUI
 struct ContentView: View {
     
     // Create an Observed object to list all the pizzas
-    @ObservedObject var pizzas = PizzaIngredientsModel()
+    @ObservedObject var modelo = PizzaIngredientsModel()
     
     var body: some View {
         VStack {
-            
+            List(modelo.pizzas){ pizza in
+                VStack(alignment: .leading) {
+                    Text(pizza.name)
+                        .font(.title)
+                        .foregroundColor(.pink)
+                        .fontWeight(.bold)
+                }
+            }
         }
     }
 }

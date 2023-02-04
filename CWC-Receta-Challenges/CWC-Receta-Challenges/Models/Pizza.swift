@@ -13,4 +13,5 @@ class Pizza:Identifiable,Decodable {
     var topping1 = ""
     var topping2 = ""
     var topping3 = ""
+    var toppings:[String]?
 }
