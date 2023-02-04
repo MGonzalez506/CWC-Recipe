@@ -1,22 +1,22 @@
 [
     {
-        "recipe":"Gallo Pinto",
+        "name":"Gallo Pinto",
         "cuisine":"Costa Rican"
     },
     {
-        "recipe":"Pizza",
+        "name":"Pizza",
         "cuisine":"Italian"
     },
     {
-        "recipe":"Chilaquiles",
+        "name":"Chilaquiles",
         "cuisine":"Mexican"
     },
     {
-        "recipe":"Sushi",
+        "name":"Sushi",
         "cuisine":"Japanese"
     },
     {
-        "recipe":"Burger",
+        "name":"Burger",
         "cuisine":"American"
     }
 ]
