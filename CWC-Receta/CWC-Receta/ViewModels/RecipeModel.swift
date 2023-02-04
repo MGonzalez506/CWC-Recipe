@@ -31,6 +31,9 @@ class RecipeModel:ObservableObject {
                 do {
                     // Decoder throws
                     let recipeArray = try decoder.decode([Recipe].self, from: data)
+                    
+                    // Assign recipeArray to recipes Published Model
+                    self.recipes = recipeArray
                 }
                 catch {
                     // Print the error
