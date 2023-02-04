@@ -31,7 +31,14 @@ class PizzaIngredientsModel {
                 // Parse JSON Data
                 let decoder = JSONDecoder()
                 
-                
+                // Handle error if decoder throws
+                do {
+                    // Decode the data and transform into Pizza Array
+                    let pizzaArray = try decoder.decode([Pizza].self, from: data)
+                } catch {
+                    // Print error in case of thrown
+                    print(error)
+                }
             } catch {
                 // Print error
                 print(error)
