@@ -27,6 +27,11 @@ class PizzaIngredientsModel {
             do {
                 // Get the data fromt he url file
                 let data = try Data(contentsOf: url)
+                
+                // Parse JSON Data
+                let decoder = JSONDecoder()
+                
+                
             } catch {
                 // Print error
                 print(error)
