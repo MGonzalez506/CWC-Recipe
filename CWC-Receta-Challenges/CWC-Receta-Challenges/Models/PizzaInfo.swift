@@ -10,5 +10,5 @@ import Foundation
 class PizzaInfo:Identifiable,Decodable {
     var id:UUID?
     var name = ""
-    var toppings:[String]=[]
+    var toppings:[String]?
 }
