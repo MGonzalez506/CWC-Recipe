@@ -23,6 +23,14 @@ class PizzaIngredientsModel {
             // Create a url object
             let url = URL(fileURLWithPath: pathString)
             
+            // Error handling to read content from file
+            do {
+                // Get the data fromt he url file
+                let data = try Data(contentsOf: url)
+            } catch {
+                // Print error
+                print(error)
+            }
         } else {
             print("The path have not been found. Check the JSON File path")
         }
