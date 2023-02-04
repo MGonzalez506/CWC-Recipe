@@ -25,6 +25,17 @@ class RecipeModel:ObservableObject {
             do {
                 // Create a data object with the data at the url
                 let data = try Data(contentsOf: url)
+                
+                // Parse JSON Data
+                let decoder = JSONDecoder()
+                do {
+                    // Decoder throws
+                    decoder.decode([Recipe].self, from: data)
+                }
+                catch {
+                    // Print the error
+                    print(error)
+                }
             }
             catch {
                 // Execution will come here if error is thrown
