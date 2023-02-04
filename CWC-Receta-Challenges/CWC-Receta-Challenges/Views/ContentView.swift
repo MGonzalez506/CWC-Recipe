@@ -20,6 +20,14 @@ struct ContentView: View {
                         .font(.title)
                         .foregroundColor(.pink)
                         .fontWeight(.bold)
+                    if let topping = pizza.toppings {
+                        Text(topping[0])
+                            .foregroundColor(.pink)
+                        Text(topping[1])
+                            .foregroundColor(.pink)
+                        Text(topping[2])
+                            .foregroundColor(.pink)
+                    }
                 }
             }
         }
