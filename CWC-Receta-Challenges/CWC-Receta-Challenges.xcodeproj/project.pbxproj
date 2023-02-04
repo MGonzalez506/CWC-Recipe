@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE28C48D298EA59A0061CF76 /* ViewListOfNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */; };
 		BE6DEDB9297430C70010075E /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDB8297430C70010075E /* ViewList.swift */; };
 		BE6DEDBD2974775D0010075E /* ViewPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBC2974775D0010075E /* ViewPhrases.swift */; };
 		BE6DEDBF297497930010075E /* ViewAddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DEDBE297497930010075E /* ViewAddDigits.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListOfNames.swift; sourceTree = "<group>"; };
 		BE6DEDB8297430C70010075E /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
 		BE6DEDBC2974775D0010075E /* ViewPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhrases.swift; sourceTree = "<group>"; };
 		BE6DEDBE297497930010075E /* ViewAddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAddDigits.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				BEB2E47D29730F0500E9048D /* ContentView.swift */,
+				BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */,
 				BEDBE8E5297C5601009233A0 /* ViewStructVSClass.swift */,
 				BEDBE8E3297C3F0E009233A0 /* ViewTypeOfPerson.swift */,
 				BE6DEDBE297497930010075E /* ViewAddDigits.swift */,
@@ -216,6 +219,7 @@
 				BE75846D297F28BA006C6732 /* Names.swift in Sources */,
 				BEDBE900297C802A009233A0 /* PizzaModel.swift in Sources */,
 				BEB2E47E29730F0500E9048D /* ContentView.swift in Sources */,
+				BE28C48D298EA59A0061CF76 /* ViewListOfNames.swift in Sources */,
 				BEDBE8E6297C5601009233A0 /* ViewStructVSClass.swift in Sources */,
 				BEB2E47C29730F0500E9048D /* CWC_Receta_ChallengesApp.swift in Sources */,
 				BED3D02C297CBD7300416260 /* BasicBtnStyle.swift in Sources */,
