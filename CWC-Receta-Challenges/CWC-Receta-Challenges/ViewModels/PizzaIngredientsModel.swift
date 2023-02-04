@@ -14,6 +14,8 @@ class PizzaIngredientsModel {
     
     // Init the pizza model with data from JSON
     init() {
+        // Get the path to the json file within the app bundle
+        let pathString = Bundle.main.path(forResource: "pizza", ofType: "json")
         
     }
 }
