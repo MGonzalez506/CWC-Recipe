@@ -34,6 +34,7 @@ struct ViewPizzasFromJSON: View {
                                     Text(topping[1])
                                     Text(topping[2])
                                 }
+                                .font(.subheadline)
                                 .foregroundColor(.pink)
                             }
                         }
