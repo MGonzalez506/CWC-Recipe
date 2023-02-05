@@ -10,6 +10,7 @@ import Foundation
 class Pizza:Identifiable,Decodable {
     var id:UUID?
     var name = ""
+    var image = ""
     var topping1 = ""
     var topping2 = ""
     var topping3 = ""
