@@ -1,6 +1,7 @@
 [
     {
         "name":"Jamón y Queso",
+        "image":"Jamón y Queso",
         "toppings":[
             "Salsa",
             "Jamón",
@@ -9,6 +10,7 @@
     },
     {
         "name":"Pepperoni",
+        "image":"Pepperoni",
         "toppings":[
             "Salsa",
             "Queso",
@@ -17,6 +19,7 @@
     },
     {
         "name":"Suprema",
+        "image":"Suprema",
         "toppings":[
             "Salsa",
             "Carne en trozos",
@@ -25,6 +28,7 @@
     },
     {
         "name":"4 Quesos",
+        "image":"4 Quesos",
         "toppings":[
             "Probolone",
             "Americano",
