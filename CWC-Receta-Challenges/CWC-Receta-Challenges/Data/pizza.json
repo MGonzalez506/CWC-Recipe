@@ -1,7 +1,7 @@
 [
     {
         "name":"Jamón y Queso",
-        "image":"Jamón y Queso",
+        "image":"Jamon_Queso",
         "toppings":[
             "Salsa",
             "Jamón",
@@ -28,7 +28,7 @@
     },
     {
         "name":"4 Quesos",
-        "image":"4 Quesos",
+        "image":"4_quesos",
         "toppings":[
             "Probolone",
             "Americano",
