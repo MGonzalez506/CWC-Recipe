@@ -17,7 +17,7 @@ struct ViewPizzasFromJSON: View {
             List(modelo.pizzas){ pizza in
                 VStack(alignment: .leading) {
                     HStack{
-                        Image(pizza.name)
+                        Image(pizza.image)
                             .resizable()
                             .scaledToFill()
                             .frame(width: 100, height: 80, alignment: .center)
