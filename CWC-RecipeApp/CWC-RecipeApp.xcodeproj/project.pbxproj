@@ -52,7 +52,11 @@
 			isa = PBXGroup;
 			children = (
 				BE8394BE29902BA100A97450 /* CWC_RecipeAppApp.swift */,
-				BE8394C029902BA100A97450 /* ContentView.swift */,
+				BE8394CE29902C0600A97450 /* Views */,
+				BE8394CD29902BFF00A97450 /* ViewModel */,
+				BE8394CC29902BFB00A97450 /* Model */,
+				BE8394CF29902C0F00A97450 /* Data */,
+				BE8394D029902C6500A97450 /* Resources */,
 				BE8394C229902BA200A97450 /* Assets.xcassets */,
 				BE8394C429902BA200A97450 /* Preview Content */,
 			);
@@ -65,6 +69,42 @@
 				BE8394C529902BA200A97450 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE8394CC29902BFB00A97450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE8394CD29902BFF00A97450 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE8394CE29902C0600A97450 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE8394C029902BA100A97450 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE8394CF29902C0F00A97450 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BE8394D029902C6500A97450 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
