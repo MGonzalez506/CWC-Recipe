@@ -16,17 +16,21 @@ struct ViewPizzasFromJSON: View {
         VStack {
             List(modelo.pizzas){ pizza in
                 VStack(alignment: .leading) {
-                    Text(pizza.name)
-                        .font(.title)
-                        .foregroundColor(.pink)
-                        .fontWeight(.bold)
-                    if let topping = pizza.toppings {
-                        HStack {
-                            Text(topping[0])
-                            Text(topping[1])
-                            Text(topping[2])
+                    HStack{
+                        VStack (alignment: .leading){
+                            Text(pizza.name)
+                                .font(.title)
+                                .foregroundColor(.pink)
+                                .fontWeight(.bold)
+                            if let topping = pizza.toppings {
+                                HStack {
+                                    Text(topping[0])
+                                    Text(topping[1])
+                                    Text(topping[2])
+                                }
+                                .foregroundColor(.pink)
+                            }
                         }
-                        .foregroundColor(.pink)
                     }
                 }
             }
