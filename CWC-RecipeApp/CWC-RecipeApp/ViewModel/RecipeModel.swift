@@ -22,6 +22,15 @@ class RecipeModel:ObservableObject {
             // Create a url object
             let url = URL(fileURLWithPath: pathString)
             
+            // Error handling
+            do {
+                // Create a data object with the data at the url
+                let data = try Data(contentsOf: url)
+            }
+            catch {
+                // Print error
+                print(error)
+            }
         } else {
             // The path does not exists
             print("The path does not exist")
