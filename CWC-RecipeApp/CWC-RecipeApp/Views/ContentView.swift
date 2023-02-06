@@ -15,12 +15,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             List(model.recipes) { recipe in
-                HStack {
+                HStack(spacing: 10.0) {
                     // Add image
                     Image(recipe.image)
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 100, height: 50, alignment: .center)
+                        .frame(width: 100, height: 70, alignment: .center)
                         .clipped()
                         .cornerRadius(5)
                     // Display Recipe name
