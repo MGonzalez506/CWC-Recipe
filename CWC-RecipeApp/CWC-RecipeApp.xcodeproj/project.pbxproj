@@ -11,6 +11,10 @@
 		BE8394C129902BA100A97450 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8394C029902BA100A97450 /* ContentView.swift */; };
 		BE8394C329902BA200A97450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8394C229902BA200A97450 /* Assets.xcassets */; };
 		BE8394C629902BA200A97450 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8394C529902BA200A97450 /* Preview Assets.xcassets */; };
+		BE8CE29B2990797B00C80A8C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CE29A2990797B00C80A8C /* Recipe.swift */; };
+		BE8CE29D299079A000C80A8C /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = BE8CE29C299079A000C80A8C /* recipes.json */; };
+		BE8CE29F29907BDB00C80A8C /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CE29E29907BDB00C80A8C /* RecipeModel.swift */; };
+		BE8CE2A229907EA400C80A8C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CE2A129907EA400C80A8C /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BE8394C029902BA100A97450 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE8394C229902BA200A97450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE8394C529902BA200A97450 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE8CE29A2990797B00C80A8C /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BE8CE29C299079A000C80A8C /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		BE8CE29E29907BDB00C80A8C /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		BE8CE2A129907EA400C80A8C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,7 @@
 				BE8394CD29902BFF00A97450 /* ViewModel */,
 				BE8394CC29902BFB00A97450 /* Model */,
 				BE8394CF29902C0F00A97450 /* Data */,
-				BE8394D029902C6500A97450 /* Resources */,
+				BE8CE2A029907E8600C80A8C /* Services */,
 				BE8394C229902BA200A97450 /* Assets.xcassets */,
 				BE8394C429902BA200A97450 /* Preview Content */,
 			);
@@ -74,6 +82,7 @@
 		BE8394CC29902BFB00A97450 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE8CE29A2990797B00C80A8C /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +90,7 @@
 		BE8394CD29902BFF00A97450 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BE8CE29E29907BDB00C80A8C /* RecipeModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -96,15 +106,17 @@
 		BE8394CF29902C0F00A97450 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BE8CE29C299079A000C80A8C /* recipes.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		BE8394D029902C6500A97450 /* Resources */ = {
+		BE8CE2A029907E8600C80A8C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BE8CE2A129907EA400C80A8C /* DataService.swift */,
 			);
-			path = Resources;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8394C629902BA200A97450 /* Preview Assets.xcassets in Resources */,
+				BE8CE29D299079A000C80A8C /* recipes.json in Resources */,
 				BE8394C329902BA200A97450 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8CE29B2990797B00C80A8C /* Recipe.swift in Sources */,
+				BE8CE29F29907BDB00C80A8C /* RecipeModel.swift in Sources */,
 				BE8394C129902BA100A97450 /* ContentView.swift in Sources */,
 				BE8394BF29902BA100A97450 /* CWC_RecipeAppApp.swift in Sources */,
+				BE8CE2A229907EA400C80A8C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
