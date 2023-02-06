@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // Create observed object of the model to display
+    @ObservedObject var model = RecipeModel()
+    
     var body: some View {
         VStack {
             
