@@ -62,7 +62,6 @@
 				BE8394CD29902BFF00A97450 /* ViewModel */,
 				BE8394CC29902BFB00A97450 /* Model */,
 				BE8394CF29902C0F00A97450 /* Data */,
-				BE8394D029902C6500A97450 /* Resources */,
 				BE8394C229902BA200A97450 /* Assets.xcassets */,
 				BE8394C429902BA200A97450 /* Preview Content */,
 			);
@@ -107,13 +106,6 @@
 				BE8CE29C299079A000C80A8C /* recipes.json */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		BE8394D029902C6500A97450 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
