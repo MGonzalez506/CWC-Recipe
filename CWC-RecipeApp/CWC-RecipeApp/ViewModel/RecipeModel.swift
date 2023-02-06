@@ -16,6 +16,9 @@ class RecipeModel:ObservableObject {
         // Get the path to the json file within the app bundle
         let pathString = Bundle.main.path(forResource: "recipes", ofType: "json")
         
-        
+        // Use optional binding to check if path exist
+        if let pathString = pathString {
+            
+        }
     }
 }
