@@ -38,6 +38,9 @@ class RecipeModel:ObservableObject {
                     for recipe in recipeArray {
                         recipe.id = UUID()
                     }
+                    
+                    // Assign recipeArray to recipes Published Model
+                    self.recipes = recipeArray
                 }
                 catch {
                     
