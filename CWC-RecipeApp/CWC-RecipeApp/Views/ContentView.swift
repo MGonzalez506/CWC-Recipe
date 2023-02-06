@@ -14,7 +14,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            
+            List(model.recipes) { recipe in
+                HStack {
+                    // Display Recipe name
+                    VStack (alignment: .leading) {
+                        Text(recipe.name)
+                        Text(recipe.totalTime)
+                    }
+                }
+            }
         }
         .padding()
     }
