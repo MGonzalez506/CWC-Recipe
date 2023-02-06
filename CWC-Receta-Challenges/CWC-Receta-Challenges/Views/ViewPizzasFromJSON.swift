@@ -19,10 +19,10 @@ struct ViewPizzasFromJSON: View {
                     HStack {
                         Image(pizza.image)
                             .resizable()
-                            .scaledToFill()
                             .frame(width: 70, height: 50, alignment: .center)
-                            .clipped()
+                            .scaledToFill()
                             .cornerRadius(5)
+                            .clipped()
                         VStack (alignment: .leading) {
                             Text(pizza.name)
                                 .font(.title)
