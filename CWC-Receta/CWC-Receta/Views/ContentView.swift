@@ -11,7 +11,7 @@ struct ContentView: View {
     
     //Create observable object of the model to display
     @ObservedObject var model = RecipeModel()
-    
+    let exampleArray = ["N1","N2","N3","N4","N5"]
     var body: some View {
         VStack {
             List(model.recipes) { receta in
@@ -19,6 +19,11 @@ struct ContentView: View {
                     Text(receta.name)
                         .font(.title)
                     Text(receta.cuisine)
+                    HStack {
+                        ForEach (exampleArray, id: \.self) { r in
+                            Text(r)
+                        }
+                    }
                 }
             }
         }
