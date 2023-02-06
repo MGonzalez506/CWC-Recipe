@@ -9,7 +9,7 @@ import Foundation
 
 class DataService {
     
-    func getLocalData() {
+    func getLocalData() -> [Recipe] {
         // Get the path to the json file within the app bundle
         let pathString = Bundle.main.path(forResource: "recipes", ofType: "json")
         
@@ -37,7 +37,7 @@ class DataService {
                     }
                     
                     // Assign recipeArray to recipes Published Model
-                    self.recipes = recipeArray
+                    return recipeArray
                 }
                 catch {
                     print(error)
@@ -51,5 +51,6 @@ class DataService {
             // The path does not exists
             print("The path does not exist")
         }
+        return [Recipe]()
     }
 }
