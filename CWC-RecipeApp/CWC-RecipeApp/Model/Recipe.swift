@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Recipe {
+class Recipe: Identifiable, Decodable {
     
     // Add Recipe properties
     var id:UUID?
