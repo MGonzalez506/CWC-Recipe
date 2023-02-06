@@ -43,7 +43,7 @@ class RecipeModel:ObservableObject {
                     self.recipes = recipeArray
                 }
                 catch {
-                    
+                    print(error)
                 }
             }
             catch {
