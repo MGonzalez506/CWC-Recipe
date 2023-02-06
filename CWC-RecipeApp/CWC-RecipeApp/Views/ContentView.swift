@@ -26,7 +26,12 @@ struct ContentView: View {
                     // Display Recipe name
                     VStack (alignment: .leading) {
                         Text(recipe.name)
+                            .font(.title)
+                            .foregroundColor(.pink)
+                            .fontWeight(.bold)
                         Text(recipe.totalTime)
+                            .font(.body)
+                            .foregroundColor(.pink)
                     }
                 }
             }
