@@ -33,7 +33,7 @@ struct ViewPizzasFromJSON: View {
                                     ForEach (topping, id: \.self) { topp in
                                         Text(topp)
                                     }
-                                    .font(.subheadline)
+                                    .font(.caption)
                                     .foregroundColor(.pink)
                                 }
                             }
