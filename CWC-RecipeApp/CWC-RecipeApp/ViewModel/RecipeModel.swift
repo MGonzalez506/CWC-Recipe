@@ -10,7 +10,7 @@ import Foundation
 class RecipeModel:ObservableObject {
     
     // Create an empty list of recipes
-    @Published var recipe = [Recipe]()
+    @Published var recipes = [Recipe]()
     
     init() {
         // Get the path to the json file within the app bundle
@@ -34,6 +34,10 @@ class RecipeModel:ObservableObject {
                     // Decoder throws
                     let recipeArray = try decoder.decode([Recipe].self, from: data)
                     
+                    // Set unique IDs for each instance
+                    for recipe in recipeArray {
+                        recipe.id = UUID()
+                    }
                 }
                 catch {
                     
