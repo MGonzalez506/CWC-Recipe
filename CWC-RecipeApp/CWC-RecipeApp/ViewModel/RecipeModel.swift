@@ -18,7 +18,13 @@ class RecipeModel:ObservableObject {
         
         // Use optional binding to check if path exist
         if let pathString = pathString {
+            // The path exists
+            // Create a url object
+            let url = URL(fileURLWithPath: pathString)
             
+        } else {
+            // The path does not exists
+            print("The path does not exist")
         }
     }
 }
