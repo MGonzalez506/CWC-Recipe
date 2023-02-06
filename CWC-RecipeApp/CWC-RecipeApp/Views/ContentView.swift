@@ -16,6 +16,8 @@ struct ContentView: View {
         VStack {
             List(model.recipes) { recipe in
                 HStack {
+                    // Add image
+                    Image(recipe.image)
                     // Display Recipe name
                     VStack (alignment: .leading) {
                         Text(recipe.name)
