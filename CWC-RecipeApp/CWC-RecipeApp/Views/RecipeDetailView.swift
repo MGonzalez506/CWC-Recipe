@@ -21,7 +21,12 @@ struct RecipeDetailView: View {
                 .scaledToFill()
             
             // MARK: Ingredients
-            
+            VStack  {
+                Text("Ingredients")
+                    .font(.headline)
+                
+                
+            }
             // MARK: Directions
         }
     }
