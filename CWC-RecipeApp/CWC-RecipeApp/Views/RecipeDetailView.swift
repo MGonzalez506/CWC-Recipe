@@ -14,7 +14,13 @@ struct RecipeDetailView: View {
     var recipe:Recipe
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            // MARK: Recipe Image
+            
+            // MARK: Ingredients
+            
+            // MARK: Directions
+        }
     }
 }
 
