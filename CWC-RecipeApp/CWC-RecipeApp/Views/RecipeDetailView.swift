@@ -16,6 +16,9 @@ struct RecipeDetailView: View {
     var body: some View {
         ScrollView {
             // MARK: Recipe Image
+            Image(recipe.image)
+                .resizable()
+                .scaledToFill()
             
             // MARK: Ingredients
             
