@@ -19,7 +19,12 @@ struct RecipeDetailView: View {
 }
 
 struct RecipeDetailView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        RecipeDetailView()
+        // Create a dummy recipe and pass it into the detail
+        // view so that we can see a temporarily preview
+        let model = RecipeModel()
+        
+        RecipeDetailView(recipe: model.recipes[0])
     }
 }
