@@ -18,10 +18,15 @@ struct ContentView: View {
                 VStack(alignment: .leading) {
                     Text(receta.name)
                         .font(.title)
+                        .foregroundColor(.pink)
+                        .fontWeight(.bold)
                     Text(receta.cuisine)
+                        .font(.headline)
+                        .foregroundColor(.pink)
                     HStack {
                         ForEach (exampleArray, id: \.self) { r in
                             Text(r)
+                                .foregroundColor(.orange)
                         }
                     }
                 }
