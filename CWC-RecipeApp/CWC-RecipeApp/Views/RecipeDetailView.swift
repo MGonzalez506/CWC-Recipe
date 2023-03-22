@@ -15,22 +15,36 @@ struct RecipeDetailView: View {
     
     var body: some View {
         ScrollView {
-            // MARK: Recipe Image
-            Image(recipe.image)
-                .resizable()
-                .scaledToFill()
-            
-            // MARK: Ingredients
             VStack (alignment: .leading){
-                Text("Ingredients")
-                    .font(.headline)
-                    .padding(.vertical, 5)
+                // MARK: Recipe Image
+                Image(recipe.image)
+                    .resizable()
+                    .scaledToFill()
                 
-                ForEach(recipe.ingredients, id: \.self) { item in
-                    Text("• " + item)
+                // MARK: Ingredients
+                VStack (alignment: .leading){
+                    Text("Ingredients")
+                        .font(.headline)
+                        .padding([.vertical, .leading], 5)
+                    
+                    ForEach(recipe.ingredients, id: \.self) { item in
+                        Text("• " + item)
+                    }
+                }
+                
+                // MARK: Directions
+                VStack(alignment: .leading){
+                    Text("Directions")
+                        .font(.headline)
+                        .padding(.vertical, 5)
+                    
+                    ForEach(0..<recipe.directions.count, id:\.self) { index in
+                        Text(String(index+1) + " - " + recipe.directions[index])
+                            .padding(.bottom, 5)
+                    }
                 }
             }
-            // MARK: Directions
+            .padding(.horizontal, 5)
         }
     }
 }
