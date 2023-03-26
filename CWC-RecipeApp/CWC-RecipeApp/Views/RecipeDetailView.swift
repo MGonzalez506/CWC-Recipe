@@ -32,6 +32,9 @@ struct RecipeDetailView: View {
                     }
                 }
                 
+                // MARK: Divider
+                Divider()
+                
                 // MARK: Directions
                 VStack(alignment: .leading){
                     Text("Directions")
