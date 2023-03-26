@@ -31,6 +31,7 @@ struct RecipeDetailView: View {
                         Text("• " + item)
                     }
                 }
+                .padding(.horizontal)
                 
                 // MARK: Divider
                 Divider()
@@ -43,10 +44,11 @@ struct RecipeDetailView: View {
                     
                     ForEach(0..<recipe.directions.count, id:\.self) { index in
                         Text(String(index+1) + " - " + recipe.directions[index])
+                            .padding(.bottom, 5)
                     }
                 }
+                .padding(.horizontal)
             }
-            .padding(.horizontal, 5)
         }
     }
 }
