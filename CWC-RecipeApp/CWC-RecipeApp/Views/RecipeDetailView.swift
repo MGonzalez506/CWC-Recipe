@@ -40,7 +40,6 @@ struct RecipeDetailView: View {
                     
                     ForEach(0..<recipe.directions.count, id:\.self) { index in
                         Text(String(index+1) + " - " + recipe.directions[index])
-                            .padding(.bottom, 5)
                     }
                 }
             }
