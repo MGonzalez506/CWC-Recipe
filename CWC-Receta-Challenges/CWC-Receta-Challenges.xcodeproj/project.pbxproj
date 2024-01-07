@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C32A0B2B4B548300B4EBEC /* ViewTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C32A0A2B4B548300B4EBEC /* ViewTabView.swift */; };
 		BE28C48D298EA59A0061CF76 /* ViewListOfNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */; };
 		BE28C48F298EA7050061CF76 /* PizzaIngredientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */; };
 		BE28C491298EB24F0061CF76 /* PizzaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28C490298EB24F0061CF76 /* PizzaInfo.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18C32A0A2B4B548300B4EBEC /* ViewTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabView.swift; sourceTree = "<group>"; };
 		BE28C48C298EA59A0061CF76 /* ViewListOfNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListOfNames.swift; sourceTree = "<group>"; };
 		BE28C48E298EA7050061CF76 /* PizzaIngredientsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngredientsModel.swift; sourceTree = "<group>"; };
 		BE28C490298EB24F0061CF76 /* PizzaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaInfo.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				BE6DEDBE297497930010075E /* ViewAddDigits.swift */,
 				BE6DEDBC2974775D0010075E /* ViewPhrases.swift */,
 				BE6DEDB8297430C70010075E /* ViewList.swift */,
+				18C32A0A2B4B548300B4EBEC /* ViewTabView.swift */,
 				BE75846A297F2633006C6732 /* ViewPizzas.swift */,
 				BE28C492298EDA760061CF76 /* ViewPizzasFromJSON.swift */,
 			);
@@ -235,6 +238,7 @@
 				BEDBE8E6297C5601009233A0 /* ViewStructVSClass.swift in Sources */,
 				BEB2E47C29730F0500E9048D /* CWC_Receta_ChallengesApp.swift in Sources */,
 				BED3D02C297CBD7300416260 /* BasicBtnStyle.swift in Sources */,
+				18C32A0B2B4B548300B4EBEC /* ViewTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -345,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

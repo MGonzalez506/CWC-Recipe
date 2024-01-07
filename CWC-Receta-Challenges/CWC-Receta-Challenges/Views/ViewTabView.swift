@@ -8,8 +8,42 @@
 import SwiftUI
 
 struct ViewTabView: View {
+    
+    @State var tabIndex = "Frases"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView (selection: $tabIndex){
+            
+            ViewPhrases()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "text.quote")
+                        Text("Frases")
+                    }
+                }
+                .tag("Frases")
+            
+            ViewAddDigits()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "numbersign")
+                        Text("Digitos")
+                    }
+                }
+                .tag("Agregar Dígitos")
+            
+            ViewTypeOfPerson()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person")
+                        Text("Categorías")
+                    }
+                }
+                .tag("Tipos de Personas")
+            
+            
+        }
     }
 }
 
