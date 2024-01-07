@@ -15,19 +15,40 @@ struct RecipeDetailView: View {
     
     var body: some View {
         ScrollView {
-            // MARK: Recipe Image
-            Image(recipe.image)
-                .resizable()
-                .scaledToFill()
-            
-            // MARK: Ingredients
-            VStack  {
-                Text("Ingredients")
-                    .font(.headline)
+            VStack (alignment: .leading){
+                // MARK: Recipe Image
+                Image(recipe.image)
+                    .resizable()
+                    .scaledToFill()
                 
+                // MARK: Ingredients
+                VStack (alignment: .leading){
+                    Text("Ingredients")
+                        .font(.headline)
+                        .padding([.vertical, .leading], 5)
+                    
+                    ForEach(recipe.ingredients, id: \.self) { item in
+                        Text("• " + item)
+                    }
+                }
+                .padding(.horizontal)
                 
+                // MARK: Divider
+                Divider()
+                
+                // MARK: Directions
+                VStack(alignment: .leading){
+                    Text("Directions")
+                        .font(.headline)
+                        .padding(.vertical, 5)
+                    
+                    ForEach(0..<recipe.directions.count, id:\.self) { index in
+                        Text(String(index+1) + " - " + recipe.directions[index])
+                            .padding(.bottom, 5)
+                    }
+                }
+                .padding(.horizontal)
             }
-            // MARK: Directions
         }
     }
 }
@@ -39,6 +60,6 @@ struct RecipeDetailView_Previews: PreviewProvider {
         // view so that we can see a temporarily preview
         let model = RecipeModel()
         
-        RecipeDetailView(recipe: model.recipes[0])
+        RecipeDetailView(recipe: model.recipes[1])
     }
 }

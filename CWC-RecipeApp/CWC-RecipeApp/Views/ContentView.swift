@@ -13,7 +13,7 @@ struct ContentView: View {
     @ObservedObject var model = RecipeModel()
     
     var body: some View {
-        VStack {
+        NavigationView {
             List(model.recipes) { recipe in
                 HStack(spacing: 10.0) {
                     // Add image
@@ -35,8 +35,8 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationBarTitle("Recetas")
         }
-        .padding()
     }
 }
 
